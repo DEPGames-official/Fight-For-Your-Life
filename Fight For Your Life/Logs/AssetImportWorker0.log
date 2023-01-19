@@ -1,0 +1,918 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.43f1 (75bff06b76bf) revision 7716848'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16348 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+D:\Program Files\UnityEditors\2020.3.43f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/CodingProjects/AllCodingProjects/AllCodingProjects/Fight-For-Your-Life/Fight For Your Life
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+8820
+Successfully changed project path to: D:/CodingProjects/AllCodingProjects/AllCodingProjects/Fight-For-Your-Life/Fight For Your Life
+D:/CodingProjects/AllCodingProjects/AllCodingProjects/Fight-For-Your-Life/Fight For Your Life
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 61.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.43f1 (75bff06b76bf)
+[Subsystems] Discovering subsystems at path D:/Program Files/UnityEditors/2020.3.43f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/CodingProjects/AllCodingProjects/AllCodingProjects/Fight-For-Your-Life/Fight For Your Life/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
+    Vendor:   
+    VRAM:     4017 MB
+    Driver:   31.0.15.2802
+Initialize mono
+Mono path[0] = 'D:/Program Files/UnityEditors/2020.3.43f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Program Files/UnityEditors/2020.3.43f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Program Files/UnityEditors/2020.3.43f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56300
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Program Files/UnityEditors/2020.3.43f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: D:/Program Files/UnityEditors/2020.3.43f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: D:/Program Files/UnityEditors/2020.3.43f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.002424 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 56.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.769 seconds
+Domain Reload Profiling:
+	ReloadAssembly (769ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (560ms)
+			LoadAssemblies (131ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (178ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (232ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (57ms)
+				BeforeProcessingInitializeOnLoad (25ms)
+				ProcessInitializeOnLoadAttributes (106ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004191 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 82.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.668 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1670ms)
+		BeginReloadAssembly (239ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (1364ms)
+			LoadAssemblies (175ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (396ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (95ms)
+			SetupLoadedEditorAssemblies (576ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (83ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (304ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2184 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.1 MB.
+System memory in use after: 97.1 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2616.
+Total: 4.010600 ms (FindLiveObjects: 0.286200 ms CreateObjectMapping: 0.147400 ms MarkObjects: 3.385900 ms  DeleteObjects: 0.189600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/WorldFiles/Environment/atlas.png
+  artifactKey: Guid(97cd5f4530bcd5149944e91281fdb3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/Environment/atlas.png using Guid(97cd5f4530bcd5149944e91281fdb3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f712696edb6bf4da108e6da1024fdfb') in 0.188880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.015714 seconds.
+  path: Assets/WorldFiles/Environment/atlas.png
+  artifactKey: Guid(97cd5f4530bcd5149944e91281fdb3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/Environment/atlas.png using Guid(97cd5f4530bcd5149944e91281fdb3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc687646a8e599b85107ab12fc7fa28e') in 0.016365 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.165879 seconds.
+  path: Assets/WorldFiles/Environment/atlas.png
+  artifactKey: Guid(97cd5f4530bcd5149944e91281fdb3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/Environment/atlas.png using Guid(97cd5f4530bcd5149944e91281fdb3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '605e00d321c00bdf1ffa30ccc4bbede6') in 0.954624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.993945 seconds.
+  path: Assets/WorldFiles/Environment
+  artifactKey: Guid(dc2ddefbbf632be48af14cdff886bc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/Environment using Guid(dc2ddefbbf632be48af14cdff886bc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72e723829202a33f41232f6fd1f92e70') in 0.009799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.290379 seconds.
+  path: Assets/WorldFiles/PlayerSkins
+  artifactKey: Guid(4ab11b4189acece498f6c7cde6bcb55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins using Guid(4ab11b4189acece498f6c7cde6bcb55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f76f07f94dac8a84e78b5f3729ac81f') in 0.011998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.052579 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(131a6b21c8605f84396be9f6751fb6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(131a6b21c8605f84396be9f6751fb6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df75b7d1a31c5b4f73fd45661b403b04') in 0.009643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.653301 seconds.
+  path: Assets/WorldFiles
+  artifactKey: Guid(d7df6c2b0b8fa8b4e969e0089630ddcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles using Guid(d7df6c2b0b8fa8b4e969e0089630ddcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63bef4747ce0200f6210a574db089273') in 0.017156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.940466 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash
+  artifactKey: Guid(d2d1f23d8b6322b439474e1c2bd2e9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash using Guid(d2d1f23d8b6322b439474e1c2bd2e9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355cd565420190f457c1b4666a7d525c') in 0.013809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.127562 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BEHIND_quiver.png
+  artifactKey: Guid(0b42e993776ef1f4cb1afafd759a652a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BEHIND_quiver.png using Guid(0b42e993776ef1f4cb1afafd759a652a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fe897faf9f3b93855220748121d11ab') in 0.023065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/FEET_plate_armor_shoes.png
+  artifactKey: Guid(0b1b2f47956b9a54b988aae59d0a6a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/FEET_plate_armor_shoes.png using Guid(0b1b2f47956b9a54b988aae59d0a6a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1a1d99211ed1a8adaf65e251d3b6502') in 0.025804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_robe_hood.png
+  artifactKey: Guid(e5920286f8316d44c8177e0948f97439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_robe_hood.png using Guid(e5920286f8316d44c8177e0948f97439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f869dc2ffa346e6fbcb0d7b0f35ed1ee') in 0.024055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_chain_armor_hood.png
+  artifactKey: Guid(9e6b10bedee9edb40b6e5c604ce88d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_chain_armor_hood.png using Guid(9e6b10bedee9edb40b6e5c604ce88d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fab31cb2e9d73229635823e32447d72') in 0.020918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_torso.png
+  artifactKey: Guid(c68ab3a270a5fce48ae93f9a21c3cb80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_torso.png using Guid(c68ab3a270a5fce48ae93f9a21c3cb80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d6eb647eb41c590b980f63d08b2ceaa') in 0.023124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_chain_armor_jacket_purple.png
+  artifactKey: Guid(ebb45f98b5a73594d8510cea75d4092b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_chain_armor_jacket_purple.png using Guid(ebb45f98b5a73594d8510cea75d4092b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7ccb4fedf83f554a5d508ad211e2057') in 0.024360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/FEET_shoes_brown.png
+  artifactKey: Guid(ae1a4008936de6a4c9fe5ae6ab4170d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/FEET_shoes_brown.png using Guid(ae1a4008936de6a4c9fe5ae6ab4170d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59fe46d3d2bcf39b88ac5731ac320ff5') in 0.021818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_chain_armor_helmet.png
+  artifactKey: Guid(ccbe46713c8d641448ddf966fcd63761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_chain_armor_helmet.png using Guid(ccbe46713c8d641448ddf966fcd63761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2e9c151919a95f5a6ba1ab86d587280') in 0.021468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BELT_rope.png
+  artifactKey: Guid(f05e929983995a8498acb4e83591e0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BELT_rope.png using Guid(f05e929983995a8498acb4e83591e0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '291abd421195f69f44e523f0fdcbb1ea') in 0.025135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_hair_blonde.png
+  artifactKey: Guid(da11ef82369ade6458d1c6f03d6f0a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_hair_blonde.png using Guid(da11ef82369ade6458d1c6f03d6f0a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '616089e2955d503d9bc41b020c4cefe1') in 0.023232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/LEGS_pants_greenish.png
+  artifactKey: Guid(dccaf3371638bc942a59ca0af03096d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/LEGS_pants_greenish.png using Guid(dccaf3371638bc942a59ca0af03096d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99af40234322a92714b20757501c35b8') in 0.023099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_chain_armor_torso.png
+  artifactKey: Guid(c2b2818c0dde97043a04631ca22e4ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_chain_armor_torso.png using Guid(c2b2818c0dde97043a04631ca22e4ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53b434a44ec3c50909dc9742e16b5a25') in 0.024273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/WEAPON_longsword.png
+  artifactKey: Guid(ce5b359f07dbead4cb2e125a1f90e16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/WEAPON_longsword.png using Guid(ce5b359f07dbead4cb2e125a1f90e16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5962d929010de088cbe3380325a8435') in 0.031388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/WEAPON_dagger.png
+  artifactKey: Guid(bcfa8e04bc6c8cf46b9e5e1b1b253568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/WEAPON_dagger.png using Guid(bcfa8e04bc6c8cf46b9e5e1b1b253568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd60f04bfb626f58a63f1350a39b0a475') in 0.033820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/WEAPON_rapier.png
+  artifactKey: Guid(df08f1020f0f3ee49af0e6650539c367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/WEAPON_rapier.png using Guid(df08f1020f0f3ee49af0e6650539c367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a12b01eba54d43e4f9b51f022440978') in 0.023202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_plate_armor_torso.png
+  artifactKey: Guid(dd526a77703cbae4ea0fd67a9e39ea20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_plate_armor_torso.png using Guid(dd526a77703cbae4ea0fd67a9e39ea20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa844f337dfff03f96f0a0a7a9473a7') in 0.024214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_robe_shirt_brown.png
+  artifactKey: Guid(ee6745aa027d35946bf4683be8e1352b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_robe_shirt_brown.png using Guid(ee6745aa027d35946bf4683be8e1352b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b038d4ebf0fb8a6324eb5d1db838092') in 0.022259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_plate_armor_arms_shoulders.png
+  artifactKey: Guid(58649c6026ffc264daabadcd3cd21ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_plate_armor_arms_shoulders.png using Guid(58649c6026ffc264daabadcd3cd21ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0e4b4ded7e575359c3db2473cde95d') in 0.023402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/WEAPON_shield_cutout_body.png
+  artifactKey: Guid(a93371ba0e148144da191bfcce0dc71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/WEAPON_shield_cutout_body.png using Guid(a93371ba0e148144da191bfcce0dc71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '221d24bbdd7511af38b01a24f37bf461') in 0.026573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/LEGS_robe_skirt.png
+  artifactKey: Guid(69df3aec7ba8b42408dc534b92e27053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/LEGS_robe_skirt.png using Guid(69df3aec7ba8b42408dc534b92e27053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd37b14fb026682fab846d53832afcc') in 0.035179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BELT_leather.png
+  artifactKey: Guid(888da06f3050451428533bfdbf7ab065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BELT_leather.png using Guid(888da06f3050451428533bfdbf7ab065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44c7f1851803d5659e8f155c14a94a46') in 0.023696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_shirt_white.png
+  artifactKey: Guid(c9d975e65a299354ab99d2bf3c1f58aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_shirt_white.png using Guid(c9d975e65a299354ab99d2bf3c1f58aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18719232467cb9947746245fb96b9c72') in 0.024795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/LEGS_plate_armor_pants.png
+  artifactKey: Guid(641984ee81e31b4489a499dfc41e47d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/LEGS_plate_armor_pants.png using Guid(641984ee81e31b4489a499dfc41e47d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd357c043c351bfccce00ca06c2c9adcc') in 0.026860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_shoulders.png
+  artifactKey: Guid(e895d6cf455b4b54b8cb293d0988dfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_shoulders.png using Guid(e895d6cf455b4b54b8cb293d0988dfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd4c501fb64f7e906e02ca20721609a') in 0.022955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BODY_human.png
+  artifactKey: Guid(931f3f4a18d341c46a7b5e9c6c8478a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BODY_human.png using Guid(931f3f4a18d341c46a7b5e9c6c8478a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99746018b2670d9db2add03e61015f5c') in 0.025204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HANDS_plate_armor_gloves.png
+  artifactKey: Guid(5c570341442f88e41995cb3c5a4bf321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HANDS_plate_armor_gloves.png using Guid(5c570341442f88e41995cb3c5a4bf321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb355403c2b52efe2f965f087c01ec28') in 0.022044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_leather_armor_hat.png
+  artifactKey: Guid(c515cb352802f294f81644451137bb9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_leather_armor_hat.png using Guid(c515cb352802f294f81644451137bb9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4565b8feff55a2860bb7f77562e9d5a7') in 0.022177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/WEAPON_shield_cutout_chain_armor_helmet.png
+  artifactKey: Guid(d2cc46671df3c5845863f96a373f2f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/WEAPON_shield_cutout_chain_armor_helmet.png using Guid(d2cc46671df3c5845863f96a373f2f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c88c0e76a70c73cc9c6dc496aafb98e1') in 0.022854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_plate_armor_helmet.png
+  artifactKey: Guid(56db09c19e3170247a45f5fed7ec6cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_plate_armor_helmet.png using Guid(56db09c19e3170247a45f5fed7ec6cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ca1c6a2b03e64e896bb1f2b781976f9') in 0.024420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000694 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BODY_skeleton.png
+  artifactKey: Guid(046c50d4303cd5c4685b1907ff797787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BODY_skeleton.png using Guid(046c50d4303cd5c4685b1907ff797787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75a7f384ad9f3ad6627055abe209df95') in 0.032402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_bracers.png
+  artifactKey: Guid(b7ebaca15b3482f49afa1f975d7488cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_bracers.png using Guid(b7ebaca15b3482f49afa1f975d7488cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022ae53d47b225a1c98d511ddefd70d9') in 0.021332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.464811 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BEHIND_quiver.png
+  artifactKey: Guid(0b42e993776ef1f4cb1afafd759a652a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BEHIND_quiver.png using Guid(0b42e993776ef1f4cb1afafd759a652a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66715187466b2c4dd74f71ccfefa90e2') in 0.015441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/FEET_plate_armor_shoes.png
+  artifactKey: Guid(0b1b2f47956b9a54b988aae59d0a6a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/FEET_plate_armor_shoes.png using Guid(0b1b2f47956b9a54b988aae59d0a6a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8f500a0184a11dbcdf940b737db1efc') in 0.019558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_robe_hood.png
+  artifactKey: Guid(e5920286f8316d44c8177e0948f97439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_robe_hood.png using Guid(e5920286f8316d44c8177e0948f97439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f5ce2add0f663bb4821a17fcc4448e4') in 0.018290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_chain_armor_hood.png
+  artifactKey: Guid(9e6b10bedee9edb40b6e5c604ce88d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_chain_armor_hood.png using Guid(9e6b10bedee9edb40b6e5c604ce88d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f7b1f79005ae2a2186ee39d536ee4c5') in 0.028577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_torso.png
+  artifactKey: Guid(c68ab3a270a5fce48ae93f9a21c3cb80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_torso.png using Guid(c68ab3a270a5fce48ae93f9a21c3cb80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f504bf8bf1ac7bebda0b94d5a721faab') in 0.058543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_chain_armor_jacket_purple.png
+  artifactKey: Guid(ebb45f98b5a73594d8510cea75d4092b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_chain_armor_jacket_purple.png using Guid(ebb45f98b5a73594d8510cea75d4092b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '060cf8f7f6ff3cf84c5b309526d92a2e') in 0.014561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/FEET_shoes_brown.png
+  artifactKey: Guid(ae1a4008936de6a4c9fe5ae6ab4170d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/FEET_shoes_brown.png using Guid(ae1a4008936de6a4c9fe5ae6ab4170d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94bb7f3e75e484db86dde6e2c428cb5a') in 0.027233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_chain_armor_helmet.png
+  artifactKey: Guid(ccbe46713c8d641448ddf966fcd63761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_chain_armor_helmet.png using Guid(ccbe46713c8d641448ddf966fcd63761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08c257431cb1fa2947d5bc86a50cdeaa') in 0.039171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BELT_rope.png
+  artifactKey: Guid(f05e929983995a8498acb4e83591e0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BELT_rope.png using Guid(f05e929983995a8498acb4e83591e0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39739443f1250ee8b0b24c25e49fc8ad') in 0.012216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000455 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_hair_blonde.png
+  artifactKey: Guid(da11ef82369ade6458d1c6f03d6f0a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_hair_blonde.png using Guid(da11ef82369ade6458d1c6f03d6f0a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30243479c9518c405b7b6bfcb6fd848a') in 0.014639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/LEGS_pants_greenish.png
+  artifactKey: Guid(dccaf3371638bc942a59ca0af03096d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/LEGS_pants_greenish.png using Guid(dccaf3371638bc942a59ca0af03096d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27a19aad682c52a1d7701a09d3874167') in 0.011335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_chain_armor_torso.png
+  artifactKey: Guid(c2b2818c0dde97043a04631ca22e4ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_chain_armor_torso.png using Guid(c2b2818c0dde97043a04631ca22e4ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9872796784563b8ef77f6facd6e12bd6') in 0.015029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/WEAPON_longsword.png
+  artifactKey: Guid(ce5b359f07dbead4cb2e125a1f90e16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/WEAPON_longsword.png using Guid(ce5b359f07dbead4cb2e125a1f90e16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ff0d41ad98a46ef1c78cd7b2256f0c3') in 0.014186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/WEAPON_dagger.png
+  artifactKey: Guid(bcfa8e04bc6c8cf46b9e5e1b1b253568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/WEAPON_dagger.png using Guid(bcfa8e04bc6c8cf46b9e5e1b1b253568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95b957e064686b68ca924ac32404b133') in 0.036766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/WEAPON_rapier.png
+  artifactKey: Guid(df08f1020f0f3ee49af0e6650539c367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/WEAPON_rapier.png using Guid(df08f1020f0f3ee49af0e6650539c367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ce2fab016e0c8469c5961a618a2c05a') in 0.024806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_plate_armor_torso.png
+  artifactKey: Guid(dd526a77703cbae4ea0fd67a9e39ea20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_plate_armor_torso.png using Guid(dd526a77703cbae4ea0fd67a9e39ea20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d28e3a4fd065625933a1402b9f6677') in 0.025035 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000427 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_robe_shirt_brown.png
+  artifactKey: Guid(ee6745aa027d35946bf4683be8e1352b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_robe_shirt_brown.png using Guid(ee6745aa027d35946bf4683be8e1352b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e0bcb76144e0bdedca366a190e0ccd') in 0.023231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_plate_armor_arms_shoulders.png
+  artifactKey: Guid(58649c6026ffc264daabadcd3cd21ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_plate_armor_arms_shoulders.png using Guid(58649c6026ffc264daabadcd3cd21ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f01d7d622a80a7012e6e1f550ba00d67') in 0.012312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/WEAPON_shield_cutout_body.png
+  artifactKey: Guid(a93371ba0e148144da191bfcce0dc71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/WEAPON_shield_cutout_body.png using Guid(a93371ba0e148144da191bfcce0dc71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6860330b984443bc85d7fd8963a7923') in 0.012967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/LEGS_robe_skirt.png
+  artifactKey: Guid(69df3aec7ba8b42408dc534b92e27053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/LEGS_robe_skirt.png using Guid(69df3aec7ba8b42408dc534b92e27053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c5be0bef5f05aa5a6355c524416022d') in 0.014694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BELT_leather.png
+  artifactKey: Guid(888da06f3050451428533bfdbf7ab065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BELT_leather.png using Guid(888da06f3050451428533bfdbf7ab065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02eaf932619f1ba3edf323ea15a5cade') in 0.035546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_shirt_white.png
+  artifactKey: Guid(c9d975e65a299354ab99d2bf3c1f58aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_shirt_white.png using Guid(c9d975e65a299354ab99d2bf3c1f58aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd5939124058d97347e1cbed6ed56db2') in 0.016711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/LEGS_plate_armor_pants.png
+  artifactKey: Guid(641984ee81e31b4489a499dfc41e47d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/LEGS_plate_armor_pants.png using Guid(641984ee81e31b4489a499dfc41e47d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31d36076ab6dc99b93473922d0382e32') in 0.014785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_shoulders.png
+  artifactKey: Guid(e895d6cf455b4b54b8cb293d0988dfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_shoulders.png using Guid(e895d6cf455b4b54b8cb293d0988dfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31889d09ec1072c117deb2efbb30c0fb') in 0.020190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BODY_human.png
+  artifactKey: Guid(931f3f4a18d341c46a7b5e9c6c8478a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BODY_human.png using Guid(931f3f4a18d341c46a7b5e9c6c8478a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b9177c45b8616dca408d02d79696331') in 0.016542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000678 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HANDS_plate_armor_gloves.png
+  artifactKey: Guid(5c570341442f88e41995cb3c5a4bf321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HANDS_plate_armor_gloves.png using Guid(5c570341442f88e41995cb3c5a4bf321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6599fb7a064951c1c6175fdffcabb18') in 0.018870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_leather_armor_hat.png
+  artifactKey: Guid(c515cb352802f294f81644451137bb9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_leather_armor_hat.png using Guid(c515cb352802f294f81644451137bb9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5b97157c7821c8e6fa55c44daf1eab9') in 0.018927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/WEAPON_shield_cutout_chain_armor_helmet.png
+  artifactKey: Guid(d2cc46671df3c5845863f96a373f2f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/WEAPON_shield_cutout_chain_armor_helmet.png using Guid(d2cc46671df3c5845863f96a373f2f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31edfb689c7ba4af4b7d0034a121f065') in 0.018514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_plate_armor_helmet.png
+  artifactKey: Guid(56db09c19e3170247a45f5fed7ec6cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_plate_armor_helmet.png using Guid(56db09c19e3170247a45f5fed7ec6cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7606c41919c770c8ec0a057a3d4f9688') in 0.295010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BODY_skeleton.png
+  artifactKey: Guid(046c50d4303cd5c4685b1907ff797787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BODY_skeleton.png using Guid(046c50d4303cd5c4685b1907ff797787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e79b5e6eda3ce566f2907ba7fc3d3b28') in 0.027097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_bracers.png
+  artifactKey: Guid(b7ebaca15b3482f49afa1f975d7488cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_bracers.png using Guid(b7ebaca15b3482f49afa1f975d7488cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '503623836dd698b5d3def6cfe0ff5a93') in 0.023288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.977092 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BEHIND_quiver.png
+  artifactKey: Guid(0b42e993776ef1f4cb1afafd759a652a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BEHIND_quiver.png using Guid(0b42e993776ef1f4cb1afafd759a652a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eff88b776339567976c855222e3e194') in 0.043502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/FEET_plate_armor_shoes.png
+  artifactKey: Guid(0b1b2f47956b9a54b988aae59d0a6a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/FEET_plate_armor_shoes.png using Guid(0b1b2f47956b9a54b988aae59d0a6a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53114c7324fba3db124a6960458d9190') in 0.013766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_robe_hood.png
+  artifactKey: Guid(e5920286f8316d44c8177e0948f97439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_robe_hood.png using Guid(e5920286f8316d44c8177e0948f97439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81ee9d0790eb6ecbff5b9c5d93e84bd9') in 0.015014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_chain_armor_hood.png
+  artifactKey: Guid(9e6b10bedee9edb40b6e5c604ce88d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_chain_armor_hood.png using Guid(9e6b10bedee9edb40b6e5c604ce88d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9836c89309e3699b7da094ded154998c') in 0.015899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_torso.png
+  artifactKey: Guid(c68ab3a270a5fce48ae93f9a21c3cb80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_torso.png using Guid(c68ab3a270a5fce48ae93f9a21c3cb80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cc2a54e95058c0e8a607bbdf0798be7') in 0.010205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_chain_armor_jacket_purple.png
+  artifactKey: Guid(ebb45f98b5a73594d8510cea75d4092b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_chain_armor_jacket_purple.png using Guid(ebb45f98b5a73594d8510cea75d4092b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa1ac59fe400928efb4d64574ea33771') in 0.013411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/FEET_shoes_brown.png
+  artifactKey: Guid(ae1a4008936de6a4c9fe5ae6ab4170d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/FEET_shoes_brown.png using Guid(ae1a4008936de6a4c9fe5ae6ab4170d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f271ab7b59b74fc9dc7e993c4132f44') in 0.412982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_chain_armor_helmet.png
+  artifactKey: Guid(ccbe46713c8d641448ddf966fcd63761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_chain_armor_helmet.png using Guid(ccbe46713c8d641448ddf966fcd63761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a657181361042eed1a034171cb15df30') in 0.013021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000444 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BELT_rope.png
+  artifactKey: Guid(f05e929983995a8498acb4e83591e0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BELT_rope.png using Guid(f05e929983995a8498acb4e83591e0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c16aaf1f70ab6d61c9349f4defeef70') in 0.013685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_hair_blonde.png
+  artifactKey: Guid(da11ef82369ade6458d1c6f03d6f0a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_hair_blonde.png using Guid(da11ef82369ade6458d1c6f03d6f0a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b719ce9903130d02b364a304088b1967') in 0.015569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000503 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/LEGS_pants_greenish.png
+  artifactKey: Guid(dccaf3371638bc942a59ca0af03096d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/LEGS_pants_greenish.png using Guid(dccaf3371638bc942a59ca0af03096d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c824de7993630d9d5de9dd83f997148') in 0.012533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_chain_armor_torso.png
+  artifactKey: Guid(c2b2818c0dde97043a04631ca22e4ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_chain_armor_torso.png using Guid(c2b2818c0dde97043a04631ca22e4ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c76cc89069657fc86b607312d3aa523f') in 0.010156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/WEAPON_longsword.png
+  artifactKey: Guid(ce5b359f07dbead4cb2e125a1f90e16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/WEAPON_longsword.png using Guid(ce5b359f07dbead4cb2e125a1f90e16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1de9cb9d47539c2b817f36b43310874f') in 0.014172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/WEAPON_dagger.png
+  artifactKey: Guid(bcfa8e04bc6c8cf46b9e5e1b1b253568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/WEAPON_dagger.png using Guid(bcfa8e04bc6c8cf46b9e5e1b1b253568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3d7c85f612cd0cab7aeec48c9e6f984') in 0.010263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/WEAPON_rapier.png
+  artifactKey: Guid(df08f1020f0f3ee49af0e6650539c367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/WEAPON_rapier.png using Guid(df08f1020f0f3ee49af0e6650539c367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c55c64504a2ad584f2c6ef06dac8f9b') in 0.014764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_plate_armor_torso.png
+  artifactKey: Guid(dd526a77703cbae4ea0fd67a9e39ea20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_plate_armor_torso.png using Guid(dd526a77703cbae4ea0fd67a9e39ea20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb6a0a6581c8cbdda4a14ef49a95effc') in 0.011495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_robe_shirt_brown.png
+  artifactKey: Guid(ee6745aa027d35946bf4683be8e1352b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_robe_shirt_brown.png using Guid(ee6745aa027d35946bf4683be8e1352b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cca86c54543b367994a2e56b3f9ba0b5') in 0.013636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_plate_armor_arms_shoulders.png
+  artifactKey: Guid(58649c6026ffc264daabadcd3cd21ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_plate_armor_arms_shoulders.png using Guid(58649c6026ffc264daabadcd3cd21ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cea3e387a5151ff7f829d5eeedd2b6d2') in 0.012631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/WEAPON_shield_cutout_body.png
+  artifactKey: Guid(a93371ba0e148144da191bfcce0dc71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/WEAPON_shield_cutout_body.png using Guid(a93371ba0e148144da191bfcce0dc71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c234258ffdcb9fdfb5eb0443b1cd41d') in 0.011509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/LEGS_robe_skirt.png
+  artifactKey: Guid(69df3aec7ba8b42408dc534b92e27053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/LEGS_robe_skirt.png using Guid(69df3aec7ba8b42408dc534b92e27053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00b7b50814b2076dc74a05e96f2f0f6') in 0.016644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BELT_leather.png
+  artifactKey: Guid(888da06f3050451428533bfdbf7ab065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BELT_leather.png using Guid(888da06f3050451428533bfdbf7ab065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5e4b094cae446cc9747e731820346bb') in 0.010844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_shirt_white.png
+  artifactKey: Guid(c9d975e65a299354ab99d2bf3c1f58aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_shirt_white.png using Guid(c9d975e65a299354ab99d2bf3c1f58aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01b666c48a29b15d90f5690cd139e92') in 0.013047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/LEGS_plate_armor_pants.png
+  artifactKey: Guid(641984ee81e31b4489a499dfc41e47d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/LEGS_plate_armor_pants.png using Guid(641984ee81e31b4489a499dfc41e47d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b0a5857625e8a0edc20a42593de236') in 0.016966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_shoulders.png
+  artifactKey: Guid(e895d6cf455b4b54b8cb293d0988dfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_shoulders.png using Guid(e895d6cf455b4b54b8cb293d0988dfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd768313ea1c91986b50aac79f1feb22e') in 0.011781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BODY_human.png
+  artifactKey: Guid(931f3f4a18d341c46a7b5e9c6c8478a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BODY_human.png using Guid(931f3f4a18d341c46a7b5e9c6c8478a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '385ab5c2b12584adaa53f7916f3e0c14') in 0.015604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000443 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HANDS_plate_armor_gloves.png
+  artifactKey: Guid(5c570341442f88e41995cb3c5a4bf321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HANDS_plate_armor_gloves.png using Guid(5c570341442f88e41995cb3c5a4bf321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08e1228e2474fe551dfaa9f773c488b') in 0.012283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_leather_armor_hat.png
+  artifactKey: Guid(c515cb352802f294f81644451137bb9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_leather_armor_hat.png using Guid(c515cb352802f294f81644451137bb9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b1cd46e6287d43425489b352b878216') in 0.013878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/WEAPON_shield_cutout_chain_armor_helmet.png
+  artifactKey: Guid(d2cc46671df3c5845863f96a373f2f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/WEAPON_shield_cutout_chain_armor_helmet.png using Guid(d2cc46671df3c5845863f96a373f2f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7f8b75d26b80df77a8dc506678c83e') in 0.346338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000460 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/HEAD_plate_armor_helmet.png
+  artifactKey: Guid(56db09c19e3170247a45f5fed7ec6cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/HEAD_plate_armor_helmet.png using Guid(56db09c19e3170247a45f5fed7ec6cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6018a93fec526debe99daded78d941b2') in 0.017149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BODY_skeleton.png
+  artifactKey: Guid(046c50d4303cd5c4685b1907ff797787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BODY_skeleton.png using Guid(046c50d4303cd5c4685b1907ff797787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e3b642b3da2ca84d2b4a4b5ec73542') in 0.012329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_bracers.png
+  artifactKey: Guid(b7ebaca15b3482f49afa1f975d7488cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/TORSO_leather_armor_bracers.png using Guid(b7ebaca15b3482f49afa1f975d7488cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d9dcd648b50cb0f13d3d740c570bea6') in 0.014696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.471261 seconds.
+  path: Assets/WorldFiles/PlayerSkins/slash/BODY_skeleton.png
+  artifactKey: Guid(046c50d4303cd5c4685b1907ff797787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/slash/BODY_skeleton.png using Guid(046c50d4303cd5c4685b1907ff797787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2996a6f4834684a6d7306c6494b42011') in 0.075417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1646.536410 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/BEHIND_quiver.png
+  artifactKey: Guid(6a92a551e3bb33141bd8e7c7936f8606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/BEHIND_quiver.png using Guid(6a92a551e3bb33141bd8e7c7936f8606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a41dbdb9b34b41e9009cb0cee088fb8') in 0.015642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/FEET_plate_armor_shoes.png
+  artifactKey: Guid(010e9aeb68082c844ac84afa7c54f87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/FEET_plate_armor_shoes.png using Guid(010e9aeb68082c844ac84afa7c54f87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3261ceeea66f337dd21868499e8d1183') in 0.012290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/FEET_shoes_brown.png
+  artifactKey: Guid(8fd4d3d1699552044a4e0c1c328987b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/FEET_shoes_brown.png using Guid(8fd4d3d1699552044a4e0c1c328987b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a0dd19ea2deb34c11a042d887863b35') in 0.013726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_plate_armor_arms_shoulders.png
+  artifactKey: Guid(bbedde77bb346fa4e846fd7c9abcc0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_plate_armor_arms_shoulders.png using Guid(bbedde77bb346fa4e846fd7c9abcc0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01577fe5dc4a02def40feab2effa6547') in 0.012018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_plate_armor_torso.png
+  artifactKey: Guid(d35280088ba3319429a384d6c3debe7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_plate_armor_torso.png using Guid(d35280088ba3319429a384d6c3debe7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3480fa9fe296540cccd44069bd873087') in 0.010620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/HEAD_hair_blonde.png
+  artifactKey: Guid(dc82e0564d196944f92bb28cc5004fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/HEAD_hair_blonde.png using Guid(dc82e0564d196944f92bb28cc5004fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '004bc3b45a34cdcf822f7e0e8ef82bd3') in 0.011814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/HEAD_plate_armor_helmet.png
+  artifactKey: Guid(00731ad43d9922444828aa340afe2659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/HEAD_plate_armor_helmet.png using Guid(00731ad43d9922444828aa340afe2659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee98911644b8f9e41bb11bfe9d8149f') in 0.010016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/BELT_leather.png
+  artifactKey: Guid(592a71fcae1029d4f86d4386003d6776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/BELT_leather.png using Guid(592a71fcae1029d4f86d4386003d6776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '171e277cbd1a483ddd82d78549ed9b41') in 0.009979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/HEAD_robe_hood.png
+  artifactKey: Guid(abfe7ea0e942e5549b80bbd10ddfe069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/HEAD_robe_hood.png using Guid(abfe7ea0e942e5549b80bbd10ddfe069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4de966ccc8d800efdf0aa0a6d19ed6b') in 0.010353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/LEGS_pants_greenish.png
+  artifactKey: Guid(3b16d3c3f7e1e6241b16fa077abd0efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/LEGS_pants_greenish.png using Guid(3b16d3c3f7e1e6241b16fa077abd0efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '380e998d321a50441c6fa99e2206578f') in 0.011057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_leather_armor_bracers.png
+  artifactKey: Guid(dfc4977b787dc0745ab0c02453ce3195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_leather_armor_bracers.png using Guid(dfc4977b787dc0745ab0c02453ce3195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbd37aca86063b80811ed376d3c33f6d') in 0.012255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/LEGS_robe_skirt.png
+  artifactKey: Guid(fa53a34eeea57b74baa4c5fda369ef82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/LEGS_robe_skirt.png using Guid(fa53a34eeea57b74baa4c5fda369ef82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24c8e8bfef714a000cfd3625da3de3b2') in 0.012752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_robe_shirt_brown.png
+  artifactKey: Guid(ea986b227271a054fb47984d45f46a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_robe_shirt_brown.png using Guid(ea986b227271a054fb47984d45f46a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7bc1f3f5d28773c51c8ba3b56bbaff6') in 0.013607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/BODY_skeleton.png
+  artifactKey: Guid(069eb2e4168dfb246aaeeb09bd2ac8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/BODY_skeleton.png using Guid(069eb2e4168dfb246aaeeb09bd2ac8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c96a336e623ec9f5e09eb9e8f87ec54e') in 0.098376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/BODY_male.png
+  artifactKey: Guid(91eb5721047615f4a9a9cca05d53d7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/BODY_male.png using Guid(91eb5721047615f4a9a9cca05d53d7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '217c31bc2043fee0d55a5332e0c0f3f0') in 0.083215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/HEAD_chain_armor_helmet.png
+  artifactKey: Guid(1d630caa64f5aa74ebdf8ed3c2c14999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/HEAD_chain_armor_helmet.png using Guid(1d630caa64f5aa74ebdf8ed3c2c14999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58e13b0e501afdbaa45bbd6f40beb774') in 0.012740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_chain_armor_jacket_purple.png
+  artifactKey: Guid(4bb4192cb150059488f529754c48b10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_chain_armor_jacket_purple.png using Guid(4bb4192cb150059488f529754c48b10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e3f5671b7cb846be5a2d3b62301f52') in 0.013393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000724 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/LEGS_plate_armor_pants.png
+  artifactKey: Guid(7f01f9c0d95f5734aa59c59c6a74d0cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/LEGS_plate_armor_pants.png using Guid(7f01f9c0d95f5734aa59c59c6a74d0cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ca14cb912474dea159616af7936ff25') in 0.010211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_leather_armor_torso.png
+  artifactKey: Guid(61913b17946d8da438d4cbbdbff5511f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_leather_armor_torso.png using Guid(61913b17946d8da438d4cbbdbff5511f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0238eaeecd1728daa4285f376523907b') in 0.010215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_chain_armor_torso.png
+  artifactKey: Guid(0c8bcd034e064354e91491a8cab796a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_chain_armor_torso.png using Guid(0c8bcd034e064354e91491a8cab796a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eb03b6fbda8276fe1c4392a67f034dd') in 0.010938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/BELT_rope.png
+  artifactKey: Guid(faca4d03e3dcc2b42bb649b2d53808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/BELT_rope.png using Guid(faca4d03e3dcc2b42bb649b2d53808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd44e2191ab43f50bc8e52dcc87809335') in 0.010759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_leather_armor_shirt_white.png
+  artifactKey: Guid(d1b2c2e2d8f8ba049826f61171c086b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_leather_armor_shirt_white.png using Guid(d1b2c2e2d8f8ba049826f61171c086b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee66d1b610f440d15346475ad53a2355') in 0.011256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/WEAPON_shield_cutout_chain_armor_helmet.png
+  artifactKey: Guid(cf5a46b1e57f21a449cd2c91f6520222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/WEAPON_shield_cutout_chain_armor_helmet.png using Guid(cf5a46b1e57f21a449cd2c91f6520222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6de5537ab3db261d20df8a8d86b5cdc') in 0.010837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_leather_armor_shoulders.png
+  artifactKey: Guid(f3d9e3a95f8028f4abe0dbf214b66342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/TORSO_leather_armor_shoulders.png using Guid(f3d9e3a95f8028f4abe0dbf214b66342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c3c96c9fae5d0631047cf8f7d57820') in 0.013784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/HEAD_chain_armor_hood.png
+  artifactKey: Guid(2569cfee62062dd4f8b0adb11cf2f5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/HEAD_chain_armor_hood.png using Guid(2569cfee62062dd4f8b0adb11cf2f5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa4a36d26db284ca35729a6f154ace92') in 0.015825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/HANDS_plate_armor_gloves.png
+  artifactKey: Guid(5592263636d5b824793a6a282ff97fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/HANDS_plate_armor_gloves.png using Guid(5592263636d5b824793a6a282ff97fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '722cd33589345ab57efeba30ca775240') in 0.014183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/WEAPON_shield_cutout_body.png
+  artifactKey: Guid(57225a4f95f32ab469c03e660135192e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/WEAPON_shield_cutout_body.png using Guid(57225a4f95f32ab469c03e660135192e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3357b37aa3116ca8410db748e3ce13') in 0.018973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/WorldFiles/PlayerSkins/walkcycle/HEAD_leather_armor_hat.png
+  artifactKey: Guid(fd79b6d09068917488e294604b4b6475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldFiles/PlayerSkins/walkcycle/HEAD_leather_armor_hat.png using Guid(fd79b6d09068917488e294604b4b6475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb3e8b67fb0e9a2279ca0dafe3c0dcd') in 0.016305 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
