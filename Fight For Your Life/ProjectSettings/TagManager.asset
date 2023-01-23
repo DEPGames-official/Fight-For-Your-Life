@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: MainGround
+    uniqueID: 253231159
+    locked: 0
+  - name: PlayerSkin
+    uniqueID: 186618487
+    locked: 0
+  - name: PlayerArmour
+    uniqueID: 3545859945
+    locked: 0
+  - name: PlayerWeapon
+    uniqueID: 199170903
+    locked: 0
+  - name: GroundBarriers
+    uniqueID: 2569449927
+    locked: 0
