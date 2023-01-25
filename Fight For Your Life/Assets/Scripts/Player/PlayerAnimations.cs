@@ -17,6 +17,9 @@ public class PlayerAnimations : MonoBehaviour
     AnimatorController humanAnimatorController;
 
     [SerializeField]
+    Animator headArmourAnimator;
+
+    [SerializeField]
     Animator mainWeaponAnimator;
 
     enum CharacterChoice
@@ -45,6 +48,28 @@ public class PlayerAnimations : MonoBehaviour
     };
     HumanAnimations humanAnimations;
 
+    enum HeadArmour
+    {
+        None,
+        Leather,
+        Plate
+    };
+    [SerializeField]
+    HeadArmour headArmourChoice;
+
+    enum HeadArmourAnimations
+    {
+        None,
+
+        Leather_Idle_Side,
+        Leather_Walk_Side,
+        Leather_Slash_Side,
+
+        Plate_Idle_Side,
+        Plate_Walk_Side
+    };
+    HeadArmourAnimations headArmourAnimations;
+
     enum MainWeaponChoice
     {
         None,
@@ -59,14 +84,14 @@ public class PlayerAnimations : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         CheckCharacterChoice();
-        
+        HeadArmourAnimate();
     }
 
     /*public void MainWeaponAttack()
@@ -91,6 +116,52 @@ public class PlayerAnimations : MonoBehaviour
                 UpdateHumanAnimations();
                 break;
         }
+    }
+
+    public void HeadArmourAnimate()
+    {
+        
+        switch (headArmourChoice)
+        {
+            //animations for leather armour
+            case HeadArmour.Leather:
+                //Skeleton animations for leather armour
+                switch (skeletonAnimations)
+                {
+                    case SkeletonAnimations.Idle_Side:
+                        headArmourAnimations = HeadArmourAnimations.Leather_Idle_Side;
+                        break;
+                    case SkeletonAnimations.Walk_Side:
+                        headArmourAnimations = HeadArmourAnimations.Leather_Walk_Side;
+                        break;
+                    case SkeletonAnimations.Slash_Side:
+                        headArmourAnimations = HeadArmourAnimations.Leather_Slash_Side;
+                        break;
+                }
+                //Human animations for leather armour
+                switch (humanAnimations)
+                {
+                    case HumanAnimations.Idle_Side:
+                        headArmourAnimations = HeadArmourAnimations.Leather_Idle_Side;
+                        break;
+                    case HumanAnimations.Walk_Side:
+                        headArmourAnimations = HeadArmourAnimations.Leather_Walk_Side;
+                        break;
+                    case HumanAnimations.Slash_Side:
+                        break;
+                }
+                break;
+
+            case HeadArmour.Plate:
+                break;
+
+
+            case HeadArmour.None:
+                headArmourAnimations = HeadArmourAnimations.None;
+                break;
+        }
+        
+        headArmourAnimator.SetInteger("headArmourAnimations", (int)headArmourAnimations);
     }
 
     public void UpdateSkeletonAnimations()
@@ -145,6 +216,9 @@ public class PlayerAnimations : MonoBehaviour
             case MainWeaponChoice.Longsword:
                 print("Longsword");
                 break;
+            case MainWeaponChoice.Bow:
+                humanAnimations = HumanAnimations.Bow_Side; 
+                break;
             default:
                 
                 break;
@@ -164,6 +238,9 @@ public class PlayerAnimations : MonoBehaviour
                 break;
             case MainWeaponChoice.Longsword:
                 print("Longsword");
+                break;
+            case MainWeaponChoice.Bow:
+                skeletonAnimations = SkeletonAnimations.Bow_Side;
                 break;
             default:
 
