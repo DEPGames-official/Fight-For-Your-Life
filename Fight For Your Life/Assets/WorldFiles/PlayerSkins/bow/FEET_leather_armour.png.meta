@@ -1,181 +1,163 @@
 fileFormatVersion: 2
-guid: 010e9aeb68082c844ac84afa7c54f87a
+guid: 102cdc14dfebc704d81d85d85e6d3813
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1685072277283826823
-    second: FEET_plate_armor_shoes_0
+      213: 8475163582846025134
+    second: FEET_leather_armour_0
   - first:
-      213: -7814407123825760307
-    second: FEET_plate_armor_shoes_1
+      213: -8842475242637063383
+    second: FEET_leather_armour_1
   - first:
-      213: -8047452345876514015
-    second: FEET_plate_armor_shoes_2
+      213: -6202954276882512591
+    second: FEET_leather_armour_2
   - first:
-      213: 7075840216074543281
-    second: FEET_plate_armor_shoes_3
+      213: 6394283148793924445
+    second: FEET_leather_armour_3
   - first:
-      213: 8484624091969318177
-    second: FEET_plate_armor_shoes_4
+      213: 5645530053923649491
+    second: FEET_leather_armour_4
   - first:
-      213: -6479473633111966569
-    second: FEET_plate_armor_shoes_5
+      213: -35079378831686424
+    second: FEET_leather_armour_5
   - first:
-      213: 5573031032331163599
-    second: FEET_plate_armor_shoes_6
+      213: -516860280113038164
+    second: FEET_leather_armour_6
   - first:
-      213: -8335757461453984542
-    second: FEET_plate_armor_shoes_7
+      213: 9146367363804418174
+    second: FEET_leather_armour_7
   - first:
-      213: 3698324098310447416
-    second: FEET_plate_armor_shoes_8
+      213: -6412191354277337891
+    second: FEET_leather_armour_8
   - first:
-      213: -1554923414667060488
-    second: FEET_plate_armor_shoes_9
+      213: 5425269160549037147
+    second: FEET_leather_armour_9
   - first:
-      213: -1256810034765819463
-    second: FEET_plate_armor_shoes_10
+      213: 8807192979637367913
+    second: FEET_leather_armour_10
   - first:
-      213: 2719882680827795582
-    second: FEET_plate_armor_shoes_11
+      213: -2948607487050586789
+    second: FEET_leather_armour_11
   - first:
-      213: 2703967603057148910
-    second: FEET_plate_armor_shoes_12
+      213: 7722190267096420612
+    second: FEET_leather_armour_12
   - first:
-      213: 5726863494316113292
-    second: FEET_plate_armor_shoes_13
+      213: 9113162437017561216
+    second: FEET_leather_armour_13
   - first:
-      213: -7754038441814070446
-    second: FEET_plate_armor_shoes_14
+      213: 7883992316753178006
+    second: FEET_leather_armour_14
   - first:
-      213: 2589729549951353517
-    second: FEET_plate_armor_shoes_15
+      213: 2896229789812925828
+    second: FEET_leather_armour_15
   - first:
-      213: -1710331035579981103
-    second: FEET_plate_armor_shoes_16
+      213: 6210455808179096217
+    second: FEET_leather_armour_16
   - first:
-      213: -921029951097638966
-    second: FEET_plate_armor_shoes_17
+      213: 8236964444703051549
+    second: FEET_leather_armour_17
   - first:
-      213: 1460226216868962883
-    second: FEET_plate_armor_shoes_18
+      213: -4362516961806195431
+    second: FEET_leather_armour_18
   - first:
-      213: 2988021948673231737
-    second: FEET_plate_armor_shoes_19
+      213: -7883559368245797844
+    second: FEET_leather_armour_19
   - first:
-      213: -4102541177895767573
-    second: FEET_plate_armor_shoes_20
+      213: 432771322297546592
+    second: FEET_leather_armour_20
   - first:
-      213: -7982358367658047294
-    second: FEET_plate_armor_shoes_21
+      213: 8869679005148970335
+    second: FEET_leather_armour_21
   - first:
-      213: -1140266068251519475
-    second: FEET_plate_armor_shoes_22
+      213: 6512807831900713685
+    second: FEET_leather_armour_22
   - first:
-      213: -1039928121665567295
-    second: FEET_plate_armor_shoes_23
+      213: -8262936448332423141
+    second: FEET_leather_armour_23
   - first:
-      213: -5874192042671201090
-    second: FEET_plate_armor_shoes_24
+      213: 8611747199682153952
+    second: FEET_leather_armour_24
   - first:
-      213: -8788349454968116270
-    second: FEET_plate_armor_shoes_25
+      213: -7012684711515889003
+    second: FEET_leather_armour_25
   - first:
-      213: 4438987877061564084
-    second: FEET_plate_armor_shoes_26
+      213: 536157281424733866
+    second: FEET_leather_armour_26
   - first:
-      213: 9185366641478139292
-    second: FEET_plate_armor_shoes_27
+      213: 7689933673586641639
+    second: FEET_leather_armour_27
   - first:
-      213: -1393675270120454904
-    second: FEET_plate_armor_shoes_28
+      213: 4651179422878102146
+    second: FEET_leather_armour_28
   - first:
-      213: 2906182886076323860
-    second: FEET_plate_armor_shoes_29
+      213: -2800919292574517643
+    second: FEET_leather_armour_29
   - first:
-      213: -3686291534729258568
-    second: FEET_plate_armor_shoes_30
+      213: 1178833505663460783
+    second: FEET_leather_armour_30
   - first:
-      213: -3985727468868601700
-    second: FEET_plate_armor_shoes_31
+      213: 8023494140570717589
+    second: FEET_leather_armour_31
   - first:
-      213: 8733164203378192882
-    second: FEET_plate_armor_shoes_32
+      213: 7568178030694077559
+    second: FEET_leather_armour_32
   - first:
-      213: -1826108620925103381
-    second: FEET_plate_armor_shoes_33
+      213: 413387954133174065
+    second: FEET_leather_armour_33
   - first:
-      213: -3022780633678746010
-    second: FEET_plate_armor_shoes_34
+      213: -1936031839927007093
+    second: FEET_leather_armour_34
   - first:
-      213: -5455582849228335795
-    second: FEET_plate_armor_shoes_35
+      213: -5882535549274531414
+    second: FEET_leather_armour_35
   - first:
-      213: 6403547682743602742
-    second: FEET_plate_armor_shoes_36
+      213: 616412791627731588
+    second: FEET_leather_armour_36
   - first:
-      213: -7132353421128478467
-    second: FEET_plate_armor_shoes_37
+      213: -6714938194040596813
+    second: FEET_leather_armour_37
   - first:
-      213: 109372519173921017
-    second: FEET_plate_armor_shoes_38
+      213: 116298580792549967
+    second: FEET_leather_armour_38
   - first:
-      213: -1332549046900777298
-    second: FEET_plate_armor_shoes_39
+      213: 6229776706915347565
+    second: FEET_leather_armour_39
   - first:
-      213: -6187524202443965346
-    second: FEET_plate_armor_shoes_40
+      213: 2862117695082191912
+    second: FEET_leather_armour_40
   - first:
-      213: 2946149171636955293
-    second: FEET_plate_armor_shoes_41
+      213: 3948896783515027665
+    second: FEET_leather_armour_41
   - first:
-      213: 3551865304999054531
-    second: FEET_plate_armor_shoes_42
+      213: -769116457859011359
+    second: FEET_leather_armour_42
   - first:
-      213: 7873458137859370175
-    second: FEET_plate_armor_shoes_43
+      213: -8569065042234066968
+    second: FEET_leather_armour_43
   - first:
-      213: -3514333155728083697
-    second: FEET_plate_armor_shoes_44
+      213: 7901717281370879059
+    second: FEET_leather_armour_44
   - first:
-      213: 8984601682065746712
-    second: FEET_plate_armor_shoes_45
+      213: -3516448167827540513
+    second: FEET_leather_armour_45
   - first:
-      213: 3040886749577478711
-    second: FEET_plate_armor_shoes_46
+      213: 5974095961286904783
+    second: FEET_leather_armour_46
   - first:
-      213: 4444266793924594016
-    second: FEET_plate_armor_shoes_47
+      213: -1476217876116669597
+    second: FEET_leather_armour_47
   - first:
-      213: -3251946747918688903
-    second: FEET_plate_armor_shoes_48
+      213: -214882160424441601
+    second: FEET_leather_armour_48
   - first:
-      213: -2264898783115928098
-    second: FEET_plate_armor_shoes_49
+      213: -2015438114029768342
+    second: FEET_leather_armour_49
   - first:
-      213: -2701381722170459781
-    second: FEET_plate_armor_shoes_50
+      213: -3534481254957590240
+    second: FEET_leather_armour_50
   - first:
-      213: -1383985245758366484
-    second: FEET_plate_armor_shoes_51
-  - first:
-      213: -1089341245570461246
-    second: FEET_plate_armor_shoes_52
-  - first:
-      213: -6557617567868709629
-    second: FEET_plate_armor_shoes_53
-  - first:
-      213: 9162005756107945091
-    second: FEET_plate_armor_shoes_54
-  - first:
-      213: 1220228108195917870
-    second: FEET_plate_armor_shoes_55
-  - first:
-      213: -9185185205952593564
-    second: FEET_plate_armor_shoes_56
-  - first:
-      213: -842010822350570696
-    second: FEET_plate_armor_shoes_57
+      213: -7453941832634724663
+    second: FEET_leather_armour_51
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -302,7 +284,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_0
+      name: FEET_leather_armour_0
       rect:
         serializedVersion: 2
         x: 0
@@ -316,14 +298,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78c6c5cee44926710800000000000000
-      internalID: 1685072277283826823
+      spriteID: ead3dd01064dd9570800000000000000
+      internalID: 8475163582846025134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_1
+      name: FEET_leather_armour_1
       rect:
         serializedVersion: 2
         x: 64
@@ -337,14 +319,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc765169f16ad8390800000000000000
-      internalID: -7814407123825760307
+      spriteID: 92b8e63cd97394580800000000000000
+      internalID: -8842475242637063383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_2
+      name: FEET_leather_armour_2
       rect:
         serializedVersion: 2
         x: 128
@@ -358,14 +340,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12b75298ab4b15090800000000000000
-      internalID: -8047452345876514015
+      spriteID: 1358d6823fdaae9a0800000000000000
+      internalID: -6202954276882512591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_3
+      name: FEET_leather_armour_3
       rect:
         serializedVersion: 2
         x: 192
@@ -379,14 +361,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b0eb86ef2f623260800000000000000
-      internalID: 7075840216074543281
+      spriteID: d5bc02d35ae0db850800000000000000
+      internalID: 6394283148793924445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_4
+      name: FEET_leather_armour_4
       rect:
         serializedVersion: 2
         x: 256
@@ -400,14 +382,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12d6d8e78a07fb570800000000000000
-      internalID: 8484624091969318177
+      spriteID: 3d739e83ca3f85e40800000000000000
+      internalID: 5645530053923649491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_5
+      name: FEET_leather_armour_5
       rect:
         serializedVersion: 2
         x: 320
@@ -421,14 +403,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79cf9d67f094416a0800000000000000
-      internalID: -6479473633111966569
+      spriteID: 8e4cbc5ad7f538ff0800000000000000
+      internalID: -35079378831686424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_6
+      name: FEET_leather_armour_6
       rect:
         serializedVersion: 2
         x: 384
@@ -442,14 +424,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc7d35c5232675d40800000000000000
-      internalID: 5573031032331163599
+      spriteID: cac7a5d405eb3d8f0800000000000000
+      internalID: -516860280113038164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_7
+      name: FEET_leather_armour_7
       rect:
         serializedVersion: 2
         x: 448
@@ -463,14 +445,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ec2938e0c0715c80800000000000000
-      internalID: -8335757461453984542
+      spriteID: e70d9c868ac6eee70800000000000000
+      internalID: 9146367363804418174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_8
+      name: FEET_leather_armour_8
       rect:
         serializedVersion: 2
         x: 512
@@ -484,14 +466,98 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 831af004c26135330800000000000000
-      internalID: 3698324098310447416
+      spriteID: dd4e770cfe15307a0800000000000000
+      internalID: -6412191354277337891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_9
+      name: FEET_leather_armour_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b543865ae8d6a4b40800000000000000
+      internalID: 5425269160549037147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964799b3a5f693a70800000000000000
+      internalID: 8807192979637367913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55ea48ec117417d0800000000000000
+      internalID: -2948607487050586789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401d24e422bba2b60800000000000000
+      internalID: 7722190267096420612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_13
       rect:
         serializedVersion: 2
         x: 0
@@ -505,14 +571,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fa15d7846dcb6ae0800000000000000
-      internalID: -1554923414667060488
+      spriteID: 0886ddee3f4787e70800000000000000
+      internalID: 9113162437017561216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_10
+      name: FEET_leather_armour_14
       rect:
         serializedVersion: 2
         x: 64
@@ -526,14 +592,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b113a7aee9ee8ee0800000000000000
-      internalID: -1256810034765819463
+      spriteID: 69d6bfbad31996d60800000000000000
+      internalID: 7883992316753178006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_11
+      name: FEET_leather_armour_15
       rect:
         serializedVersion: 2
         x: 128
@@ -547,14 +613,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e785a7d33e6feb520800000000000000
-      internalID: 2719882680827795582
+      spriteID: 48524b126a9713820800000000000000
+      internalID: 2896229789812925828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_12
+      name: FEET_leather_armour_16
       rect:
         serializedVersion: 2
         x: 192
@@ -568,14 +634,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee3c260753c668520800000000000000
-      internalID: 2703967603057148910
+      spriteID: 99ac6c337a8ff2650800000000000000
+      internalID: 6210455808179096217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_13
+      name: FEET_leather_armour_17
       rect:
         serializedVersion: 2
         x: 256
@@ -589,14 +655,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8d3ddf7108e97f40800000000000000
-      internalID: 5726863494316113292
+      spriteID: d1f4c0a65839f4270800000000000000
+      internalID: 8236964444703051549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_14
+      name: FEET_leather_armour_18
       rect:
         serializedVersion: 2
         x: 320
@@ -610,14 +676,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25be2fcae1f146490800000000000000
-      internalID: -7754038441814070446
+      spriteID: 915ece4dfe93573c0800000000000000
+      internalID: -4362516961806195431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_15
+      name: FEET_leather_armour_19
       rect:
         serializedVersion: 2
         x: 384
@@ -631,14 +697,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da2ce210e4190f320800000000000000
-      internalID: 2589729549951353517
+      spriteID: c2c91020688f79290800000000000000
+      internalID: -7883559368245797844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_16
+      name: FEET_leather_armour_20
       rect:
         serializedVersion: 2
         x: 448
@@ -652,14 +718,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d2edef1cfea348e0800000000000000
-      internalID: -1710331035579981103
+      spriteID: 06775868933810600800000000000000
+      internalID: 432771322297546592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_17
+      name: FEET_leather_armour_21
       rect:
         serializedVersion: 2
         x: 512
@@ -673,14 +739,98 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acf6459a328d733f0800000000000000
-      internalID: -921029951097638966
+      spriteID: f5df4a5cf0e671b70800000000000000
+      internalID: 8869679005148970335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_18
+      name: FEET_leather_armour_22
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2f2de7734226a50800000000000000
+      internalID: 6512807831900713685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_23
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10a4834417245d80800000000000000
+      internalID: -8262936448332423141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_24
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed058c7372138770800000000000000
+      internalID: 8611747199682153952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_25
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5926840e860fdae90800000000000000
+      internalID: -7012684711515889003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_26
       rect:
         serializedVersion: 2
         x: 0
@@ -694,14 +844,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 342ef24f104c34410800000000000000
-      internalID: 1460226216868962883
+      spriteID: aa67f0fe430d07700800000000000000
+      internalID: 536157281424733866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_19
+      name: FEET_leather_armour_27
       rect:
         serializedVersion: 2
         x: 64
@@ -715,14 +865,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97b0dbf8126977920800000000000000
-      internalID: 2988021948673231737
+      spriteID: 7ea4270eee128ba60800000000000000
+      internalID: 7689933673586641639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_20
+      name: FEET_leather_armour_28
       rect:
         serializedVersion: 2
         x: 128
@@ -736,14 +886,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be13c1fe888d017c0800000000000000
-      internalID: -4102541177895767573
+      spriteID: 2827147ca0f4c8040800000000000000
+      internalID: 4651179422878102146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_21
+      name: FEET_leather_armour_29
       rect:
         serializedVersion: 2
         x: 192
@@ -757,14 +907,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c800e16b57f83190800000000000000
-      internalID: -7982358367658047294
+      spriteID: 576be894eb22129d0800000000000000
+      internalID: -2800919292574517643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_22
+      name: FEET_leather_armour_30
       rect:
         serializedVersion: 2
         x: 256
@@ -778,14 +928,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d06df646d06fc20f0800000000000000
-      internalID: -1140266068251519475
+      spriteID: fa52662e3de0c5010800000000000000
+      internalID: 1178833505663460783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_23
+      name: FEET_leather_armour_31
       rect:
         serializedVersion: 2
         x: 320
@@ -799,14 +949,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c54f2412ee6191f0800000000000000
-      internalID: -1039928121665567295
+      spriteID: 59d452a196d295f60800000000000000
+      internalID: 8023494140570717589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_24
+      name: FEET_leather_armour_32
       rect:
         serializedVersion: 2
         x: 384
@@ -820,14 +970,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb42822c57daa7ea0800000000000000
-      internalID: -5874192042671201090
+      spriteID: 7749f6c22d1970960800000000000000
+      internalID: 7568178030694077559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_25
+      name: FEET_leather_armour_33
       rect:
         serializedVersion: 2
         x: 448
@@ -841,14 +991,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dba0aebbb2890680800000000000000
-      internalID: -8788349454968116270
+      spriteID: 13788807726acb500800000000000000
+      internalID: 413387954133174065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_26
+      name: FEET_leather_armour_34
       rect:
         serializedVersion: 2
         x: 512
@@ -862,14 +1012,98 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b6158694f37a9d30800000000000000
-      internalID: 4438987877061564084
+      spriteID: b880e439c45d125e0800000000000000
+      internalID: -1936031839927007093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_27
+      name: FEET_leather_armour_35
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa952eeb5190d5ea0800000000000000
+      internalID: -5882535549274531414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_36
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4825af70b20fd8800800000000000000
+      internalID: 616412791627731588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_37
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6d18f2a4fbfc2a0800000000000000
+      internalID: -6714938194040596813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_38
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42a50c61fc2d9100800000000000000
+      internalID: 116298580792549967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_39
       rect:
         serializedVersion: 2
         x: 0
@@ -883,14 +1117,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9df6055b4af87f70800000000000000
-      internalID: 9185366641478139292
+      spriteID: d6c21bd78ec947650800000000000000
+      internalID: 6229776706915347565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_28
+      name: FEET_leather_armour_40
       rect:
         serializedVersion: 2
         x: 64
@@ -904,14 +1138,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8054930d9bba8ace0800000000000000
-      internalID: -1393675270120454904
+      spriteID: 82cdbb821e848b720800000000000000
+      internalID: 2862117695082191912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_29
+      name: FEET_leather_armour_41
       rect:
         serializedVersion: 2
         x: 128
@@ -925,14 +1159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41816e0ffe5d45820800000000000000
-      internalID: 2906182886076323860
+      spriteID: 1d88814d3bc4dc630800000000000000
+      internalID: 3948896783515027665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_30
+      name: FEET_leather_armour_42
       rect:
         serializedVersion: 2
         x: 192
@@ -946,14 +1180,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b9dee54169a7dcc0800000000000000
-      internalID: -3686291534729258568
+      spriteID: 1ec286218ac8355f0800000000000000
+      internalID: -769116457859011359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_31
+      name: FEET_leather_armour_43
       rect:
         serializedVersion: 2
         x: 256
@@ -967,14 +1201,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c98f19efbf9dfa8c0800000000000000
-      internalID: -3985727468868601700
+      spriteID: 8e7bb64beb0941980800000000000000
+      internalID: -8569065042234066968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_32
+      name: FEET_leather_armour_44
       rect:
         serializedVersion: 2
         x: 320
@@ -988,14 +1222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f1b38b929e623970800000000000000
-      internalID: 8733164203378192882
+      spriteID: 3543da7900a88ad60800000000000000
+      internalID: 7901717281370879059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_33
+      name: FEET_leather_armour_45
       rect:
         serializedVersion: 2
         x: 384
@@ -1009,14 +1243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be21b7862eb58a6e0800000000000000
-      internalID: -1826108620925103381
+      spriteID: fd5f095b501133fc0800000000000000
+      internalID: -3516448167827540513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_34
+      name: FEET_leather_armour_46
       rect:
         serializedVersion: 2
         x: 448
@@ -1030,14 +1264,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66ee5af670dec06d0800000000000000
-      internalID: -3022780633678746010
+      spriteID: fcb0a9aef9048e250800000000000000
+      internalID: 5974095961286904783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FEET_plate_armor_shoes_35
+      name: FEET_leather_armour_47
       rect:
         serializedVersion: 2
         x: 512
@@ -1051,8 +1285,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d451805bd40e944b0800000000000000
-      internalID: -5455582849228335795
+      spriteID: 36bfbfab9ab638be0800000000000000
+      internalID: -1476217876116669597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_48
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8255740d5940df0800000000000000
+      internalID: -214882160424441601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_49
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61f87aa6b9b704e0800000000000000
+      internalID: -2015438114029768342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_50
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029d9fc660003fec0800000000000000
+      internalID: -3534481254957590240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FEET_leather_armour_51
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce026955674e8890800000000000000
+      internalID: -7453941832634724663
       vertices: []
       indices: 
       edges: []
