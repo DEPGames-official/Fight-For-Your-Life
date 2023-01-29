@@ -8,15 +8,20 @@ public class PlayerAnimationController : MonoBehaviour
     [SerializeField]
     PlayerController playerController;
 
+    [Space]
+
     [SerializeField]
     Animator playerAnimator;
     public float animationSpeed;
 
+    [Space]
 
     [SerializeField]
     AnimatorController skeletonAnimatorController;
     [SerializeField]
     AnimatorController humanAnimatorController;
+
+    [Space]
 
     [SerializeField]
     Animator headArmourAnimator;
@@ -27,25 +32,35 @@ public class PlayerAnimationController : MonoBehaviour
     [SerializeField]
     Animator feetArmourAnimator;
 
+    [Space]
+
     [SerializeField]
     AnimatorController leatherHeadArmourAnimatorController;
     [SerializeField]
     AnimatorController plateHeadArmourAnimatorController;
+
+    [Space]
 
     [SerializeField]
     AnimatorController leatherTorsoArmourAnimatorController;
     [SerializeField]
     AnimatorController plateTorsoArmourAnimatorController;
 
+    [Space]
+
     [SerializeField]
-    AnimatorController leatherLegsArmourAnimatorController;
+    AnimatorController robeLegsArmourAnimatorController;
     [SerializeField]
     AnimatorController plateLegsArmourAnimatorController;
+
+    [Space]
 
     [SerializeField]
     AnimatorController leatherFeetArmourAnimatorController;
     [SerializeField]
     AnimatorController plateFeetArmourAnimatorController;
+
+    [Space]
 
     [SerializeField]
     Animator mainWeaponAnimator;
@@ -55,8 +70,10 @@ public class PlayerAnimationController : MonoBehaviour
         Skeleton,
         Human
     };
+    [Space]
     [SerializeField]
     CharacterChoice characterChoice;
+
 
     enum PlayerAnimations
     {
@@ -75,6 +92,7 @@ public class PlayerAnimationController : MonoBehaviour
         Leather,
         Plate
     };
+    [Space]
     [SerializeField]
     HeadArmour headArmourChoice;
 
@@ -84,15 +102,17 @@ public class PlayerAnimationController : MonoBehaviour
         Leather,
         Plate
     };
+    [Space]
     [SerializeField]
     TorsoArmour torsoArmourChoice;
 
     enum LegsArmour
     {
         None,
-        Leather,
+        Robe,
         Plate
     };
+    [Space]
     [SerializeField]
     LegsArmour legsArmourChoice;
 
@@ -102,6 +122,7 @@ public class PlayerAnimationController : MonoBehaviour
         Leather,
         Plate
     };
+    [Space]
     [SerializeField]
     FeetArmour feetArmourChoice;
 
@@ -113,6 +134,7 @@ public class PlayerAnimationController : MonoBehaviour
         Longsword,
         Bow
     };
+    [Space]
     [SerializeField]
     MainWeaponChoice mainWeaponChoice;
 
@@ -135,9 +157,12 @@ public class PlayerAnimationController : MonoBehaviour
     void UpdateAnimatorSpeed()
     {
         playerAnimator.SetFloat("animSpeedMultiplier", animationSpeed);
-        mainWeaponAnimator.SetFloat("animSpeedMultiplier", animationSpeed);
+        
         headArmourAnimator.SetFloat("animSpeedMultiplier", animationSpeed);
+        torsoArmourAnimator.SetFloat("animSpeedMultiplier", animationSpeed);
+        legsArmourAnimator.SetFloat("animSpeedMultiplier", animationSpeed);
         feetArmourAnimator.SetFloat("animSpeedMultiplier", animationSpeed);
+        mainWeaponAnimator.SetFloat("animSpeedMultiplier", animationSpeed);
     }
 
     void UpdatePlayerAnimations()
@@ -235,8 +260,8 @@ public class PlayerAnimationController : MonoBehaviour
 
         switch (legsArmourChoice)
         {
-            case LegsArmour.Leather:
-                legsArmourAnimator.runtimeAnimatorController = leatherLegsArmourAnimatorController;
+            case LegsArmour.Robe:
+                legsArmourAnimator.runtimeAnimatorController = robeLegsArmourAnimatorController;
                 break;
 
             case LegsArmour.Plate:
@@ -269,6 +294,8 @@ public class PlayerAnimationController : MonoBehaviour
     void PlayerArmourAnimate()
     {
         headArmourAnimator.SetInteger("headArmourAnimations", (int)playerAnimations);
+        torsoArmourAnimator.SetInteger("torsoArmourAnimations", (int)playerAnimations);
+        legsArmourAnimator.SetInteger("legsArmourAnimations", (int)playerAnimations);
         feetArmourAnimator.SetInteger("feetArmourAnimations", (int)playerAnimations);
     }
 

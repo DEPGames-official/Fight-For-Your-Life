@@ -44,6 +44,9 @@ TagManager:
   - name: MainGround
     uniqueID: 253231159
     locked: 0
+  - name: EnemySkin
+    uniqueID: 3820290207
+    locked: 0
   - name: PlayerSkin
     uniqueID: 186618487
     locked: 0
