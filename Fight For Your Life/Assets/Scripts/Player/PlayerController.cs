@@ -12,9 +12,15 @@ public class PlayerController : MonoBehaviour
 
     public Vector3 mousePosition;
 
-    
+    public Rigidbody2D playerRb;
+
+    private void Start()
+    {
+        playerRb = GetComponent<Rigidbody2D>();
+    }
+
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         mousePosition = Input.mousePosition;
 
@@ -25,10 +31,12 @@ public class PlayerController : MonoBehaviour
 
     void MovePlayer()
     {
+
         inputX = Input.GetAxis("Horizontal");
         inputY = Input.GetAxis("Vertical");
 
-        transform.Translate(new Vector3(inputX * playerSpeed, inputY * playerSpeed, 0) * Time.deltaTime);
+        playerRb.MovePosition(transform.position + new Vector3(inputX * playerSpeed, inputY * playerSpeed, 0));
+
     }
     void FlipPlayer()
     {
