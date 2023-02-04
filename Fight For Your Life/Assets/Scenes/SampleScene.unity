@@ -652,6 +652,7 @@ GameObject:
   - component: {fileID: 1096755041}
   - component: {fileID: 1096755042}
   - component: {fileID: 1096755043}
+  - component: {fileID: 1096755044}
   m_Layer: 0
   m_Name: walk - sword_8
   m_TagString: Untagged
@@ -744,6 +745,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1096755044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096755040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb8732db54855444880a9208ee0872b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyRigidBody: {fileID: 1810228957}
 --- !u!1 &1190884958
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,7 +783,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190884958}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.02, y: 0, z: 0}
+  m_LocalPosition: {x: 0.6, y: -8.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1789278237}
@@ -873,10 +887,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1810228955}
+  enemySpeed: 2
+  enemyController: {fileID: 1096755044}
   startPos: {x: 0, y: 0, z: 0}
   player: {fileID: 1789278236}
+  endPos: {x: 0, y: 0, z: 0}
   mainWorldTilemap: {fileID: 1708722699}
+  nodeWithLowestCost: {fileID: 11400000, guid: 5fb25926905c63e48a69ea5237b2d597, type: 2}
   mainGrid: {fileID: 613515783}
+  processNodesBool: 0
 --- !u!4 &1593935540
 Transform:
   m_ObjectHideFlags: 0
@@ -14788,6 +14807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1810228956}
+  - component: {fileID: 1810228957}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -14810,6 +14830,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1810228957
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810228955}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1909430944
 GameObject:
   m_ObjectHideFlags: 0
