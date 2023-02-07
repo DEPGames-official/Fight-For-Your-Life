@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -49,5 +46,5 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector3(-1f, transform.localScale.y, transform.localScale.z);
         }
     }
-    
+
 }

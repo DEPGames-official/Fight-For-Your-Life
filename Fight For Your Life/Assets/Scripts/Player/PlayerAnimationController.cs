@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor.Animations;
 using UnityEngine;
 
@@ -141,7 +139,7 @@ public class PlayerAnimationController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -157,7 +155,7 @@ public class PlayerAnimationController : MonoBehaviour
     void UpdateAnimatorSpeed()
     {
         playerAnimator.SetFloat("animSpeedMultiplier", animationSpeed);
-        
+
         headArmourAnimator.SetFloat("animSpeedMultiplier", animationSpeed);
         torsoArmourAnimator.SetFloat("animSpeedMultiplier", animationSpeed);
         legsArmourAnimator.SetFloat("animSpeedMultiplier", animationSpeed);
@@ -278,7 +276,7 @@ public class PlayerAnimationController : MonoBehaviour
             case FeetArmour.Leather:
                 feetArmourAnimator.runtimeAnimatorController = leatherFeetArmourAnimatorController;
                 break;
-            
+
             case FeetArmour.Plate:
                 feetArmourAnimator.runtimeAnimatorController = plateFeetArmourAnimatorController;
                 break;
@@ -299,7 +297,7 @@ public class PlayerAnimationController : MonoBehaviour
         feetArmourAnimator.SetInteger("feetArmourAnimations", (int)playerAnimations);
     }
 
-   
 
-    
+
+
 }

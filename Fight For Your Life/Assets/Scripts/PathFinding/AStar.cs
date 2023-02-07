@@ -1,10 +1,9 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading;
-using UnityEditor.Experimental.GraphView;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Unity.Burst;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -26,10 +25,12 @@ public class AStar : MonoBehaviour
     [SerializeField]
     //Target
     GameObject player;
+    [SerializeField]
+    PlayerController playerController;
     Transform playerTransform;
     [SerializeField]
     Vector3Int endPos;
-    
+
     [SerializeField]
     Tilemap mainWorldTilemap;
     [SerializeField]
@@ -39,7 +40,7 @@ public class AStar : MonoBehaviour
     [SerializeField]
     Grid mainGrid;
 
-    Node startNode = new Node();
+    Node startNode;
 
     [SerializeField]
     //convert to priority queue
@@ -54,7 +55,8 @@ public class AStar : MonoBehaviour
 
     HashSet<Node> surroundingNodes = new HashSet<Node>();
 
-    public bool processNodesBool;
+    public bool startAlgorithm;
+    public bool tracedPath;
 
     // Start is called before the first frame update
     void Start()
@@ -63,60 +65,82 @@ public class AStar : MonoBehaviour
         playerTransform = player.GetComponent<Transform>();
         enemyTransform = enemy.GetComponent<Transform>();
 
-        startPos = mainGrid.WorldToCell(enemyTransform.position);
-        endPos = mainGrid.WorldToCell(playerTransform.position);
+
 
         enemyRigidBody = enemy.GetComponent<Rigidbody2D>();
 
-        NodePositions();
 
-        print(openDictionary.Count);
-        
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        startPos = mainGrid.WorldToCell(enemyTransform.position);
+        endPos = mainGrid.WorldToCell(playerTransform.position);
 
-        MoveTargetToPosition();
-
-        if (processNodesBool == true)
+        //If openDictionary not empty then start processing
+        if (openDictionary.Count != 0)
         {
-            Stopwatch timeToExecute = new Stopwatch();
-            timeToExecute.Start();
-            processNodes();
-            timeToExecute.Stop();
-
-            print("It took:  " + timeToExecute.ElapsedMilliseconds);
+            
 
             foreach (Node node in closedDictionary.Values)
             {
                 mainWorldTilemap.SetTile(node.positionNode, nodeWithLowestCost);
             }
-
-            
-            
-            
-            
-            //processNodesBool = false;
         }
+
+        if (startAlgorithm == true)
+        {
+            RunAlgorithm();
+            
+
+            startAlgorithm = false;
+
+        }
+
+        if (openDictionary.Count != 0)
+        {
+            //Stopwatch timer = new Stopwatch();
+            //timer.Start();
+
+            processNodes();
+
+            //timer.Stop();
+
+            //print("Time to process (milliseconds): " + timer.ElapsedTicks);
+        }
+        
+
+
+
+
+
+        MoveTargetToPosition();
+
     }
 
-
+   
     //Get top, bottom, left, right, top left, top right, bottom left, bottom right nodes
-    void NodePositions()
+    void SetStart()
     {
-       
-        startNode.positionNode = startPos;
-        startNode.G = 0;
+        openDictionary = new Dictionary<string, Node>();
+        closedDictionary = new Dictionary<string, Node>();
+        startNode = new Node
+        {
+            positionNode = startPos,
+            G = 0
+        };
         startNode.H = GetManhattanDistance(startNode.positionNode, endPos);
-        //print($"Getting start and end positions and add startNode to openlist to start it: Starting node: {startNode.positionNode}");
 
-        openDictionary.Clear();
-        closedDictionary.Clear();
-        surroundingNodes.Clear();
+        openDictionary.Add(TotalDictionaryAmount.ToString(), startNode);
 
-        openDictionary.Add(TotalDictionaryAmount.ToString() ,startNode);
+    }
+
+    void RunAlgorithm()
+    {
+        SetStart();
         
     }
 
@@ -125,80 +149,71 @@ public class AStar : MonoBehaviour
         var minFValue = openDictionary.Values.Min(node => node.F);
         var nodesWithLowestFCost = openDictionary.Where(node => node.Value.F == minFValue).ToDictionary(node => node.Key, node => node.Value);
 
-        foreach(KeyValuePair<string, Node> node in nodesWithLowestFCost)
+        foreach (KeyValuePair<string, Node> current in nodesWithLowestFCost)
         {
-            //print(node.Value.positionNode);
-
-            if (node.Value.positionNode == endPos)
+            if (current.Value.positionNode == endPos)
             {
-                //print($"Position found end: {node.Value.positionNode}");
-
-                closedDictionary.Add(node.Key ,node.Value);
-
-                RetracePath(node.Value);
-                
-
-                //Do stuff here to retrace position
+                RetracePath(current.Value);
+                openDictionary.Clear();
+                startAlgorithm = true;
+                break;
             }
-            else if (node.Value.positionNode != endPos)
+            else if (current.Value.positionNode != endPos)
             {
-                LookAtNodesAround(node.Value);
-                if (!closedDictionary.ContainsKey(node.Key))
-                {
-                    closedDictionary.Add(node.Key, node.Value);
-                }
-                
-                openDictionary.Remove(node.Key);
-                //processNodes();
+                LookAtNodesAround(current.Value);
             }
+
+            if (!closedDictionary.ContainsKey(current.Key))
+            {
+                closedDictionary.Add(current.Key, current.Value);
+            }
+            openDictionary.Remove(current.Key);
+
 
         }
 
-        
+
 
     }
 
     List<Node> path = new List<Node>();
     void RetracePath(Node endNode)
     {
-        Node current = endNode;
-        while (current != startNode)
+        if (!path.Contains(endNode))
         {
-            path.Add(current);
-            current = current.parentNode;
+            Node current = endNode;
+            while (current != startNode)
+            {
+
+                path.Add(current);
+                current = current.parentNode;
+            }
+
+            path.Reverse();
         }
 
-        path.Reverse();
-
-        foreach (Node nodePosition in path)
-        {
-            //print(nodePosition.positionNode);
-        }
     }
 
-    
+
     void MoveTargetToPosition()
     {
         enemyPositionRounded = new Vector3Int(Mathf.RoundToInt(enemyTransform.position.x), Mathf.RoundToInt(enemyTransform.position.y), Mathf.RoundToInt(enemyTransform.position.z));
-        if (path.Count > 0) 
+        if (path.Count > 0)
         {
             if (enemyPositionRounded != path[0].positionNode)
             {
                 Vector3 direction = (path[0].positionNode - enemyTransform.position).normalized;
-                //print(direction);
                 enemyTransform.Translate(direction * enemySpeed * Time.deltaTime);
-
-                //enemyController.MoveEnemy(direction.x, direction.y, enemySpeed);
-
-
             }
             else if (enemyPositionRounded == path[0].positionNode)
             {
                 path.Remove(path[0]);
             }
         }
-        
+
     }
+
+
 
     public int TotalDictionaryAmount
     {
@@ -212,78 +227,126 @@ public class AStar : MonoBehaviour
     //Add all of them to list then once DONE going through list THEN add it to Open List
     void LookAtNodesAround(Node focusNode)
     {
-        
+        surroundingNodes = new HashSet<Node>();
 
         var upNode = new Node
         {
             positionNode = focusNode.positionNode + Vector3Int.up,
-            parentNode = focusNode
         };
-        //upNode.G = CalculateGCost(upNode.positionNode, startNode.positionNode);
-        //upNode.H = GetManhattanDistance(upNode.positionNode, endPos);
+
+        var upRightNode = new Node
+        {
+            positionNode = focusNode.positionNode + Vector3Int.up + Vector3Int.right,
+            Square = true,
+        };
 
         surroundingNodes.Add(upNode);
+        surroundingNodes.Add(upRightNode);
 
         var rightNode = new Node
         {
             positionNode = focusNode.positionNode + Vector3Int.right,
-            parentNode = focusNode
         };
-        //rightNode.G = CalculateGCost(rightNode.positionNode, startNode.positionNode);
-       //rightNode.H = GetManhattanDistance(rightNode.positionNode, endPos);
+
+        var downRightNode = new Node
+        {
+            positionNode = focusNode.positionNode + Vector3Int.down + Vector3Int.right,
+            Square = true,
+        };
+
 
         surroundingNodes.Add(rightNode);
+        surroundingNodes.Add(downRightNode);
 
         var downNode = new Node
         {
             positionNode = focusNode.positionNode + Vector3Int.down,
-            parentNode = focusNode
         };
-        //downNode.G = CalculateGCost(downNode.positionNode, startNode.positionNode);
-        //downNode.H = GetManhattanDistance(downNode.positionNode, endPos);
+
+        var downLeftNode = new Node
+        {
+            positionNode = focusNode.positionNode + Vector3Int.down + Vector3Int.left,
+            Square = true,
+        };
+
+        
 
         surroundingNodes.Add(downNode);
+        surroundingNodes.Add(downLeftNode);
 
         var leftNode = new Node
         {
             positionNode = focusNode.positionNode + Vector3Int.left,
-            parentNode = focusNode
         };
-        //leftNode.G = CalculateGCost(leftNode.positionNode, startNode.positionNode);
-        //leftNode.H = GetManhattanDistance(leftNode.positionNode, endPos);
+
+        var leftUpNode = new Node
+        {
+            positionNode = focusNode.positionNode + Vector3Int.left + Vector3Int.right,
+            Square = true,
+        };
 
         surroundingNodes.Add(leftNode);
+        surroundingNodes.Add(leftUpNode);
 
         //Sort out possible duplicate nodes
         HashSet<Node> nodesToRemove = new HashSet<Node>();
 
         foreach (var surroundNode in surroundingNodes)
         {
-            //KeyValuePair<string, Node> duplicateNode = new KeyValuePair<string, Node>();
             KeyValuePair<string, Node> duplicateNode = new KeyValuePair<string, Node>();
+            //duplicateNode = openDictionary.Concat(closedDictionary).FirstOrDefault(node => node.Value.positionNode == surroundNode.positionNode);
             duplicateNode = openDictionary.Concat(closedDictionary).FirstOrDefault(node => node.Value.positionNode == surroundNode.positionNode);
 
-            if (duplicateNode.Value != null)
+            if (duplicateNode.Value == null)
             {
-                //print($"Removed node: {duplicateNode.Key} ");
-            }
-            else
-            {
-                surroundNode.G = CalculateGCost(surroundNode.positionNode, startNode.positionNode);
-                surroundNode.H = GetManhattanDistance(surroundNode.positionNode, endPos);
+                surroundNode.G = CalculateGCost(surroundNode.positionNode, startNode.positionNode) * 10;
+                surroundNode.H = GetManhattanDistance(surroundNode.positionNode, endPos) * 10;
+                surroundNode.parentNode = focusNode;
+
+                if (surroundNode.Square == true)
+                {
+                    surroundNode.G *= 1.4f;
+                    surroundNode.H += 1.4f;
+                }
 
                 if (!openDictionary.ContainsKey(TotalDictionaryAmount.ToString()))
                 {
                     openDictionary.Add(TotalDictionaryAmount.ToString(), surroundNode);
                 }
             }
-            
+            /*else
+            {
+                surroundNode.G = CalculateGCost(surroundNode.positionNode, startNode.positionNode) * 10;
+                surroundNode.H = GetManhattanDistance(surroundNode.positionNode, endPos) * 10;
+
+                //Make sure start node ("0") doesn't get a parentNode
+                if (duplicateNode.Key != "0")
+                {
+                    surroundNode.parentNode = focusNode;
+                }
+
+                if (surroundNode.Square == true)
+                {
+                    surroundNode.G *= 1.4f;
+                    surroundNode.H += 1.4f;
+                }
+
+                if (!openDictionary.ContainsKey(duplicateNode.Key))
+                {
+                    openDictionary.Add(duplicateNode.Key, surroundNode);
+                }
+                if (closedDictionary.ContainsKey(duplicateNode.Key))
+                {
+                    closedDictionary.Remove(duplicateNode.Key);
+                }
+
+            }*/
+
         }
-        surroundingNodes.Clear();
 
     }
 
-    
+
 
     int GetManhattanDistance(Vector3Int currentNode, Vector3Int endNode)
     {
@@ -294,10 +357,13 @@ public class AStar : MonoBehaviour
         return distanceX + distanceY;
     }
 
-    int CalculateGCost(Vector3Int currentNode, Vector3Int startNode)
+    float CalculateGCost(Vector3Int currentNode, Vector3 startNode)
     {
-        int distanceX = Math.Abs(currentNode.x - startNode.x);
-        int distanceY = Math.Abs(currentNode.y - startNode.y);
+        float distanceX;
+        float distanceY;
+
+        distanceX = Mathf.Abs(currentNode.x - startNode.x);
+        distanceY = Mathf.Abs(currentNode.y - startNode.y);
 
         return distanceX + distanceY;
     }

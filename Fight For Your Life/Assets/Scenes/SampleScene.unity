@@ -783,7 +783,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190884958}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6, y: -8.15, z: 0}
+  m_LocalPosition: {x: -20.11, y: -8.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1789278237}
@@ -891,11 +891,13 @@ MonoBehaviour:
   enemyController: {fileID: 1096755044}
   startPos: {x: 0, y: 0, z: 0}
   player: {fileID: 1789278236}
+  playerController: {fileID: 1789278240}
   endPos: {x: 0, y: 0, z: 0}
   mainWorldTilemap: {fileID: 1708722699}
   nodeWithLowestCost: {fileID: 11400000, guid: 5fb25926905c63e48a69ea5237b2d597, type: 2}
   mainGrid: {fileID: 613515783}
-  processNodesBool: 0
+  nodesPositionsBool: 0
+  tracedPath: 0
 --- !u!4 &1593935540
 Transform:
   m_ObjectHideFlags: 0
