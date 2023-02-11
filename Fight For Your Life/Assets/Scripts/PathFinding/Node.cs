@@ -17,7 +17,7 @@ public class Node
     //F cost is G cost and H cost combined
     public float F { get { return G + H; } }
 
-    public bool Square = false;
+    public string nodePosition { get; set; }
 }
 
 

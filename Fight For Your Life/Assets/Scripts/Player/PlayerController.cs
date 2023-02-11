@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        playerRb = GetComponent<Rigidbody2D>();
+        //playerRb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
