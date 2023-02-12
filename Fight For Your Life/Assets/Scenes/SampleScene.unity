@@ -934,12 +934,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3bb98ce8eeeda4438f218bef8ab7e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1810228955}
-  enemySpeed: 2
-  enemyController: {fileID: 1096755044}
+  seeker: {fileID: 1810228955}
+  seekerSpeed: 0
   startPos: {x: 0, y: 0, z: 0}
-  player: {fileID: 1190884958}
-  playerController: {fileID: 1789278240}
+  target: {fileID: 1190884958}
   endPos: {x: 0, y: 0, z: 0}
   mainWorldTilemap: {fileID: 1708722699}
   nodeWithLowestCost: {fileID: 11400000, guid: 5fb25926905c63e48a69ea5237b2d597, type: 2}

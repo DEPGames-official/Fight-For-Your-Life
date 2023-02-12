@@ -10,26 +10,20 @@ public class AStar : MonoBehaviour
 {
 
     [SerializeField]
-    //Start
-    GameObject enemy;
-    Transform enemyTransform;
-    Vector3Int enemyPositionRounded;
-    Rigidbody2D enemyRigidBody;
-    public float enemySpeed;
+    //Gameobject going to target
+    GameObject seeker;
+    Transform seekerTransform;
+    public float seekerSpeed;
     [SerializeField]
-    EnemyController enemyController;
-    [SerializeField]
-    Vector3Int startPos;
+    Vector3Int seekerPos;
 
 
     [SerializeField]
-    //Target
-    GameObject player;
+    //Target of the seeker
+    GameObject target;
+    Transform targetTransform;
     [SerializeField]
-    PlayerController playerController;
-    Transform playerTransform;
-    [SerializeField]
-    Vector3Int endPos;
+    Vector3Int targetPos;
 
     [SerializeField]
     Tilemap mainWorldTilemap;
@@ -43,14 +37,8 @@ public class AStar : MonoBehaviour
     Node startNode;
 
     [SerializeField]
-    //convert to priority queue
-    //List<Node> openList = new List<Node>();
-
     Dictionary<string, Node> openDictionary = new Dictionary<string, Node>();
-    //HashSet<Node> openList = new HashSet<Node>();
     [SerializeField]
-    //List<Node> closedList = new List<Node>();
-
     Dictionary<string, Node> closedDictionary = new Dictionary<string, Node>();
 
     HashSet<Node> surroundingNodes = new HashSet<Node>();
@@ -66,9 +54,8 @@ public class AStar : MonoBehaviour
     void Start()
     {
 
-        playerTransform = player.GetComponent<Transform>();
-        enemyTransform = enemy.GetComponent<Transform>();
-        enemyRigidBody = enemy.GetComponent<Rigidbody2D>();
+        targetTransform = target.GetComponent<Transform>();
+        seekerTransform = seeker.GetComponent<Transform>();
 
     }
 
@@ -76,12 +63,11 @@ public class AStar : MonoBehaviour
     void Update()
     {
 
-        startPos = mainGrid.WorldToCell(enemyTransform.position);
-        endPos = mainGrid.WorldToCell(playerTransform.position);
+        seekerPos = mainGrid.WorldToCell(seekerTransform.position);
+        targetPos = mainGrid.WorldToCell(targetTransform.position);
 
         foreach (Node node in path)
         {
-            //print("Closed " + node.positionNode);
             mainWorldTilemap.SetTile(node.positionNode, nodeWithLowestCost);
         }
 
@@ -120,10 +106,10 @@ public class AStar : MonoBehaviour
         closedDictionary = new Dictionary<string, Node>();
         startNode = new Node
         {
-            positionNode = startPos,
+            positionNode = seekerPos,
             G = 0
         };
-        startNode.H = GetDistance(startNode.positionNode, endPos);
+        startNode.H = GetDistance(startNode.positionNode, targetPos);
 
         openDictionary.Add(TotalDictionaryAmount.ToString(), startNode);
 
@@ -133,8 +119,7 @@ public class AStar : MonoBehaviour
     void processNodes()
     {
         var minFValue = openDictionary.Values.Min(node => node.F);
-        var nodesWithLowestFCost = openDictionary.Where(node => node.Value.F == minFValue).ToDictionary(node => node.Key, node => node.Value);
-        nodesWithLowestFCost = nodesWithLowestFCost.OrderBy(x => x.Value.H).ToDictionary(pair => pair.Key, pair => pair.Value);
+        var nodesWithLowestFCost = openDictionary.Where(node => node.Value.F == minFValue).OrderBy(x => x.Value.H).ToDictionary(node => node.Key, node => node.Value);
 
 
         foreach (KeyValuePair<string, Node> current in nodesWithLowestFCost)
@@ -146,30 +131,29 @@ public class AStar : MonoBehaviour
             }
             openDictionary.Remove(current.Key);
 
-            if (current.Value.positionNode == endPos)
+            if (current.Value.positionNode == targetPos)
             {
                 startAlgorithm = false;
                 RetracePath(current.Value);
                 openDictionary.Clear();
                 //startAlgorithm = true;
-                break;
+                return;
             }
-            else if (current.Value.positionNode != endPos)
+            else if (current.Value.positionNode != targetPos)
             {
                 LookAtNodesAround(current.Value);
-                processNodes();
             }
 
 
 
 
         }
+        processNodes();
 
 
 
     }
 
-    //Sort out path list and follow path with lowest H costs
     void RetracePath(Node endNode)
     {
         path = new List<Node>();
@@ -192,15 +176,15 @@ public class AStar : MonoBehaviour
 
     void MoveTargetToPosition()
     {
-        enemyPositionRounded = new Vector3Int(Mathf.RoundToInt(enemyTransform.position.x), Mathf.RoundToInt(enemyTransform.position.y), Mathf.RoundToInt(enemyTransform.position.z));
+        //seekerPositionRounded = new Vector3Int(Mathf.RoundToInt(seekerTransform.position.x), Mathf.RoundToInt(seekerTransform.position.y), Mathf.RoundToInt(seekerTransform.position.z));
         if (path.Count > 0)
         {
-            if (enemyPositionRounded != path[0].positionNode)
+            if (seekerPos != path[0].positionNode)
             {
-                Vector3 direction = (path[0].positionNode - enemyTransform.position).normalized;
-                enemyTransform.Translate(direction * enemySpeed * Time.deltaTime);
+                Vector3 direction = (path[0].positionNode - seekerTransform.position).normalized;
+                seekerTransform.Translate(direction * seekerSpeed * Time.deltaTime);
             }
-            else if (enemyPositionRounded == path[0].positionNode)
+            else if (seekerPos == path[0].positionNode)
             {
                 path.Remove(path[0]);
             }
@@ -297,12 +281,10 @@ public class AStar : MonoBehaviour
 
             KeyValuePair<string, Node> isClosed = new KeyValuePair<string, Node>();
             KeyValuePair<string, Node> isOpen = new KeyValuePair<string, Node>();
-            KeyValuePair<string, Node> combined = new KeyValuePair<string, Node>();
             //duplicateNode = openDictionary.Concat(closedDictionary).FirstOrDefault(node => node.Value.positionNode == surroundNode.positionNode);
             //duplicateNode = openDictionary.Concat(closedDictionary).FirstOrDefault(node => node.Value.positionNode == surroundNode.positionNode);
             isClosed = closedDictionary.FirstOrDefault(node => node.Value.positionNode == surroundNode.positionNode);
             isOpen = openDictionary.FirstOrDefault(node => node.Value.positionNode == surroundNode.positionNode);
-            combined = closedDictionary.Concat(openDictionary).FirstOrDefault(node => node.Value.positionNode == surroundNode.positionNode);
 
             if (isClosed.Value != null)
             {
@@ -311,7 +293,7 @@ public class AStar : MonoBehaviour
 
             if (isOpen.Value != null)
             {
-                /*Node afterNode = new Node();
+                Node afterNode = new Node();
                 afterNode.G = isOpen.Value.G;
                 afterNode.H = isOpen.Value.H;
                 afterNode.parentNode = isOpen.Value.parentNode;
@@ -319,7 +301,7 @@ public class AStar : MonoBehaviour
                 afterNode.nodePosition = isOpen.Value.nodePosition;
 
                 afterNode.G = GetDistance(afterNode.positionNode, startNode.positionNode);
-                afterNode.H = GetDistance(afterNode.positionNode, endPos);
+                afterNode.H = GetDistance(afterNode.positionNode, targetPos);
 
                 //print("afternode g = " + afterNode.G + " " + "isopen g = " + isOpen.Value.G);
 
@@ -331,16 +313,19 @@ public class AStar : MonoBehaviour
                     openDictionary.Add(openKey, afterNode);
 
                     print(openKey + " " + " was swapped out");
-                }*/
+                }
                 continue;
             }
-            else
+            else if(!openDictionary.ContainsKey(TotalDictionaryAmount.ToString()))
             {
                 surroundNode.G = GetDistance(surroundNode.positionNode, startNode.positionNode);
-                surroundNode.H = GetDistance(surroundNode.positionNode, endPos);
+                surroundNode.H = GetDistance(surroundNode.positionNode, targetPos);
                 surroundNode.parentNode = focusNode;
 
+               
                 openDictionary.Add(TotalDictionaryAmount.ToString(), surroundNode);
+                
+                
             }
 
         }
