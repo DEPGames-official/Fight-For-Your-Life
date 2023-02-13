@@ -11,8 +11,8 @@ public class AStar : MonoBehaviour
 
     [SerializeField]
     //Gameobject going to target
-    GameObject seeker;
-    Transform seekerTransform;
+    public GameObject seeker;
+    public Transform seekerTransform;
     public float seekerSpeed;
     [SerializeField]
     Vector3Int seekerPos;
@@ -20,19 +20,19 @@ public class AStar : MonoBehaviour
 
     [SerializeField]
     //Target of the seeker
-    GameObject target;
-    Transform targetTransform;
+    public GameObject target;
+    public Transform targetTransform;
     [SerializeField]
-    Vector3Int targetPos;
+    public Vector3Int targetPos;
 
     [SerializeField]
-    Tilemap mainWorldTilemap;
+    public Tilemap mainWorldTilemap;
     [SerializeField]
-    TileBase nodeWithLowestCost;
+    public TileBase nodeWithLowestCost;
 
 
     [SerializeField]
-    Grid mainGrid;
+    public Grid mainGrid;
 
     Node startNode;
 
@@ -43,10 +43,10 @@ public class AStar : MonoBehaviour
 
     HashSet<Node> surroundingNodes = new HashSet<Node>();
 
-    List<Node> path = new List<Node>();
+    public List<Node> path = new List<Node>();
 
-    public bool startAlgorithm;
-    public bool tracedPath;
+    //public bool startAlgorithm;
+    //public bool tracedPath;
 
     public Stopwatch timeToRun = new Stopwatch();
 
@@ -54,13 +54,23 @@ public class AStar : MonoBehaviour
     void Start()
     {
 
-        targetTransform = target.GetComponent<Transform>();
-        seekerTransform = seeker.GetComponent<Transform>();
+        //targetTransform = target.GetComponent<Transform>();
+        //seekerTransform = seeker.GetComponent<Transform>();
 
     }
 
     // Update is called once per frame
     void Update()
+    {
+
+        RunPathFind();
+
+        
+
+    }
+
+
+    public void RunPathFind()
     {
 
         seekerPos = mainGrid.WorldToCell(seekerTransform.position);
@@ -71,15 +81,6 @@ public class AStar : MonoBehaviour
             mainWorldTilemap.SetTile(node.positionNode, nodeWithLowestCost);
         }
 
-        RunPathFind();
-
-        MoveTargetToPosition();
-
-    }
-
-
-    void RunPathFind()
-    {
         timeToRun.Start();
         if (timeToRun.ElapsedMilliseconds > 500)
         {
@@ -94,8 +95,8 @@ public class AStar : MonoBehaviour
             speed.Stop();
             print(speed.ElapsedTicks);
         }
-        
 
+        MoveTargetToPosition();
 
     }
 
@@ -133,7 +134,6 @@ public class AStar : MonoBehaviour
 
             if (current.Value.positionNode == targetPos)
             {
-                startAlgorithm = false;
                 RetracePath(current.Value);
                 openDictionary.Clear();
                 //startAlgorithm = true;

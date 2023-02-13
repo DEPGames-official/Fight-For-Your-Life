@@ -13,14 +13,48 @@ public class EnemyController : MonoBehaviour
     }
     */
 
-    void faceDirection()
+    [SerializeField]
+    GameObject playerGameObject;
+    Transform playerTransform;
+
+    public float enemySpeed;
+    public float enemyAttackRange;
+
+    void Start()
     {
-        transform.rotation = Quaternion.identity;
+        playerTransform = playerGameObject.GetComponent<Transform>();    
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        faceDirection();
+        MoveEnemy();
+
     }
 
+    void MoveEnemy()
+    {
+        
+        if (OutOfAttackRange() == true)
+        {
+            Vector2 direction = (playerTransform.position - transform.position).normalized;
+            transform.Translate(direction * enemySpeed * Time.deltaTime);
+        }
+        
+    }
+
+    bool OutOfAttackRange()
+    {
+        var distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
+
+        if (distanceToPlayer > enemyAttackRange)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+    
 }
