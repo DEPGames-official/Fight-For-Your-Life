@@ -163,49 +163,6 @@ public class PlayerAnimationController : MonoBehaviour
         mainWeaponAnimator.SetFloat("animSpeedMultiplier", animationSpeed);
     }
 
-    void UpdatePlayerAnimations()
-    {
-
-        if (playerController.inputX != 0 || playerController.inputY != 0)
-        {
-            playerAnimations = PlayerAnimations.Walk_Side;
-        }
-        else
-        {
-            playerAnimations = PlayerAnimations.Idle_Side;
-        }
-
-        if (Input.GetButtonDown("Fire1"))
-        {
-            MainWeaponAttackPlayer();
-        }
-
-        playerAnimator.SetInteger("playerAnimationState", (int)playerAnimations);
-    }
-
-    void MainWeaponAttackPlayer()
-    {
-        switch (mainWeaponChoice)
-        {
-            case MainWeaponChoice.Dagger:
-                playerAnimations = PlayerAnimations.Slash_Side;
-                break;
-            case MainWeaponChoice.Rapier:
-                print("Rapier");
-                break;
-            case MainWeaponChoice.Longsword:
-                print("Longsword");
-                break;
-            case MainWeaponChoice.Bow:
-                playerAnimations = PlayerAnimations.Bow_Side;
-                break;
-            default:
-
-                break;
-        }
-        mainWeaponAnimator.SetInteger("WeaponType", (int)mainWeaponChoice);
-    }
-
     void CheckCharacterCustomization()
     {
         mainWeaponAnimator.SetInteger("WeaponType", 0);
@@ -288,6 +245,51 @@ public class PlayerAnimationController : MonoBehaviour
 
         PlayerArmourAnimate();
     }
+
+    void UpdatePlayerAnimations()
+    {
+
+        if (playerController.inputX != 0 || playerController.inputY != 0)
+        {
+            playerAnimations = PlayerAnimations.Walk_Side;
+        }
+        else
+        {
+            playerAnimations = PlayerAnimations.Idle_Side;
+        }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            MainWeaponAttackPlayer();
+        }
+
+        playerAnimator.SetInteger("playerAnimationState", (int)playerAnimations);
+    }
+
+    void MainWeaponAttackPlayer()
+    {
+        switch (mainWeaponChoice)
+        {
+            case MainWeaponChoice.Dagger:
+                playerAnimations = PlayerAnimations.Slash_Side;
+                break;
+            case MainWeaponChoice.Rapier:
+                print("Rapier");
+                break;
+            case MainWeaponChoice.Longsword:
+                print("Longsword");
+                break;
+            case MainWeaponChoice.Bow:
+                playerAnimations = PlayerAnimations.Bow_Side;
+                break;
+            default:
+
+                break;
+        }
+        mainWeaponAnimator.SetInteger("WeaponType", (int)mainWeaponChoice);
+    }
+
+    
 
     void PlayerArmourAnimate()
     {

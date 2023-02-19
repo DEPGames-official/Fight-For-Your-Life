@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - EnemyImpRed
   layers:
   - Default
   - TransparentFX
@@ -12,8 +13,8 @@ TagManager:
   - Water
   - UI
   - Barriers
-  - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 
@@ -38,9 +39,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: MainGround
     uniqueID: 253231159
     locked: 0
@@ -58,4 +56,7 @@ TagManager:
     locked: 0
   - name: GroundBarriers
     uniqueID: 2569449927
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0

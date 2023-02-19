@@ -5,12 +5,22 @@ public class PlayerController : MonoBehaviour
     public float inputX;
     public float inputY;
 
+    [SerializeField]
+    LayerMask enemyLayer;
+
+    [SerializeField]
+    Rigidbody2D playerRb;
     public float playerSpeed;
+    [SerializeField]
+    Transform playerSlashAttackPoint;
+    [SerializeField]
+    float playerAttackSize;
 
-    public Vector3 mousePosition;
+    
 
-    public Rigidbody2D playerRb;
-
+    
+    
+    
     private void Start()
     {
         //playerRb = GetComponent<Rigidbody2D>();
@@ -19,10 +29,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        mousePosition = Input.mousePosition;
 
         MovePlayer();
-
         FlipPlayer();
     }
 
@@ -45,6 +53,18 @@ public class PlayerController : MonoBehaviour
         {
             transform.localScale = new Vector3(-1f, transform.localScale.y, transform.localScale.z);
         }
+    }
+
+    void SlashAttack()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(playerSlashAttackPoint.position, playerAttackSize, enemyLayer);
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            print(enemy);
+            var enemyHealth = enemy.GetComponent<EnemyHealth>();
+            enemyHealth.currHealth -= 50;
+        }
+        
     }
 
 }
