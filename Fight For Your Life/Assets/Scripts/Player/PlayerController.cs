@@ -16,14 +16,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     float playerAttackSize;
 
-    
+    XPBarController xpController;
+    [SerializeField]
+    GameObject xpBar;
 
-    
-    
-    
+
+
+
+
     private void Start()
     {
-        //playerRb = GetComponent<Rigidbody2D>();
+        xpController = xpBar.GetComponent<XPBarController>();
     }
 
     // Update is called once per frame
@@ -60,9 +63,11 @@ public class PlayerController : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(playerSlashAttackPoint.position, playerAttackSize, enemyLayer);
         foreach (Collider2D enemy in hitEnemies)
         {
+            //Check what enemy tag it is and change values accordingly
             print(enemy);
             var enemyHealth = enemy.GetComponent<EnemyHealth>();
             enemyHealth.currHealth -= 50;
+            xpController.AddXP(50f);
         }
         
     }

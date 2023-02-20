@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class EnemyHealth : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {   
+    {
         enemyParent = transform.parent.gameObject;
     }
 
@@ -19,8 +20,9 @@ public class EnemyHealth : MonoBehaviour
     void Update()
     {
         if (currHealth <= 0f)
-        {
+        { 
             enemyParent.SetActive(false);
+            
         }
     }
 }

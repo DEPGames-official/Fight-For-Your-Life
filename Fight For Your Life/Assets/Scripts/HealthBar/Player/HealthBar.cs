@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class HealthBar
 {
-    public Slider slider;
+    public Slider healthSlider;
 
     public void SetMaxHealth(float health)
     {
-        slider.maxValue = health;
+        healthSlider.maxValue = health;
     }
 
     public void SetHealth(float health)
     {
-        slider.value = health;
+        healthSlider.value = health;
     }
 }
