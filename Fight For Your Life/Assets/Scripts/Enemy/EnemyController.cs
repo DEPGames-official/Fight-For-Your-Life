@@ -5,21 +5,15 @@ using System.Threading;
 using Unity.Burst;
 using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(EnemyAnimationController))]
+[RequireComponent(typeof(EnemyHealth))]
 public class EnemyController : MonoBehaviour
 {
-    /*
-     * Use this only for in case I carry on with my own A Star Algorithm
-    [SerializeField]
-    Rigidbody2D enemyRigidBody;
+    public int difficultyLevel;
 
-    public void MoveEnemy(float directionX, float directionY, float enemySpeed)
-    {
-        enemyRigidBody.MovePosition(transform.position + new Vector3(directionX * enemySpeed, directionY * enemySpeed, 0));
-    }
-    */
-
-    [SerializeField]
-    GameObject playerGameObject;
     Transform playerTransform;
     Vector3 playerDirection;
     [SerializeField]
@@ -36,7 +30,7 @@ public class EnemyController : MonoBehaviour
 
     void Start()
     {
-        playerTransform = playerGameObject.GetComponent<Transform>();
+        playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         enemyAnimation = GetComponent<EnemyAnimationController>();
     }
 

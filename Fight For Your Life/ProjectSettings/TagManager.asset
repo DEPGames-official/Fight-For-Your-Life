@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - EnemyImpRed
+  - HealController
+  - XPBar
+  - EnemyGoblin
   layers:
   - Default
   - TransparentFX

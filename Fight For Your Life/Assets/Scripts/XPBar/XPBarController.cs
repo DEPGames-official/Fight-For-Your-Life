@@ -44,12 +44,22 @@ public class XPBarController : MonoBehaviour
         xpTextMeshPro.text = level.ToString();
     }
 
+    public int GetLevel()
+    {
+        int level = Int32.Parse(xpTextMeshPro.text);
+        return level;
+    }
+
     void AddXPLevel(int level)
     {
         if (xpSlider.value == xpSlider.maxValue)
         {
             int nextlevel = Int32.Parse(xpTextMeshPro.text) + level;
             xpTextMeshPro.text = nextlevel.ToString();
+
+            float xpRequired = nextlevel * 100f * 1.25f;
+
+            SetMaxXP(xpRequired);
             SetXP(0f);
         }
     }

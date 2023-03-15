@@ -1,5 +1,12 @@
 using UnityEngine;
 
+
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(PlayerAnimationController))]
+[RequireComponent(typeof(PlayerHealth))]
 public class PlayerController : MonoBehaviour
 {
     public float inputX;
@@ -9,6 +16,8 @@ public class PlayerController : MonoBehaviour
     LayerMask enemyLayer;
 
     [SerializeField]
+    Transform bodyTransform;
+
     Rigidbody2D playerRb;
     public float playerSpeed;
     [SerializeField]
@@ -16,17 +25,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     float playerAttackSize;
 
-    XPBarController xpController;
-    [SerializeField]
-    GameObject xpBar;
-
-
-
+    
 
 
     private void Start()
     {
-        xpController = xpBar.GetComponent<XPBarController>();
+        playerRb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -37,6 +41,7 @@ public class PlayerController : MonoBehaviour
         FlipPlayer();
     }
 
+    
     void MovePlayer()
     {
 
@@ -50,11 +55,11 @@ public class PlayerController : MonoBehaviour
     {
         if (inputX < 0)
         {
-            transform.localScale = new Vector3(1f, transform.localScale.y, transform.localScale.z);
+            bodyTransform.localScale = new Vector3(1f, bodyTransform.localScale.y, bodyTransform.localScale.z);
         }
         else if (inputX > 0)
         {
-            transform.localScale = new Vector3(-1f, transform.localScale.y, transform.localScale.z);
+            bodyTransform.localScale = new Vector3(-1f, bodyTransform.localScale.y, bodyTransform.localScale.z);
         }
     }
 
@@ -63,11 +68,21 @@ public class PlayerController : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(playerSlashAttackPoint.position, playerAttackSize, enemyLayer);
         foreach (Collider2D enemy in hitEnemies)
         {
-            //Check what enemy tag it is and change values accordingly
             print(enemy);
-            var enemyHealth = enemy.GetComponent<EnemyHealth>();
-            enemyHealth.currHealth -= 50;
-            xpController.AddXP(50f);
+            if (enemy.CompareTag("EnemyImpRed") == true)
+            {
+                var enemyHealth = enemy.GetComponent<EnemyHealth>();
+                enemyHealth.currHealth -= 50;
+
+                
+            }
+            if (enemy.CompareTag("EnemyGoblin") == true)
+            {
+                var enemyHealth = enemy.GetComponent<EnemyHealth>();
+                enemyHealth.currHealth -= 50;
+            }
+            //Check what enemy tag it is and change values accordingly
+            
         }
         
     }
