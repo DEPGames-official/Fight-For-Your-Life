@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7788082630617775811}
   - component: {fileID: 7788082630617775808}
   - component: {fileID: 7788082630617775871}
-  - component: {fileID: 7788082630617775870}
   - component: {fileID: 7788082630617775809}
+  - component: {fileID: 7788082630617775870}
   m_Layer: 8
   m_Name: RedImp
   m_TagString: EnemyImpRed
@@ -148,6 +148,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyAnimator: {fileID: 7788082630617775808}
   enemyAnimations: 0
+--- !u!114 &7788082630617775809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7788082630617775866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef7e735582d106f46afe8ac38073bb8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
+  currHealth: 50
+  healController: {fileID: 0}
+  xpController: {fileID: 0}
 --- !u!114 &7788082630617775870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,24 +182,9 @@ MonoBehaviour:
     m_Bits: 128
   enemySpeed: 2
   enemyAttackRange: 2
+  enemyAttackPower: 0
   enemyAttackSize: 2
   enemyAttackPoint: {fileID: 7788082631089643006}
---- !u!114 &7788082630617775809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7788082630617775866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef7e735582d106f46afe8ac38073bb8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 50
-  currHealth: 50
-  healController: {fileID: 0}
-  xpController: {fileID: 0}
 --- !u!1 &7788082631089643007
 GameObject:
   m_ObjectHideFlags: 0

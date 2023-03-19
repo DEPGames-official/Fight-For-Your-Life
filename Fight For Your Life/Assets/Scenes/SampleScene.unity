@@ -363,9 +363,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabType:
-  - {fileID: 5586217323081652770, guid: fbbad9bba4133a54f9f86b780edac018, type: 3}
   - {fileID: 7788082630617775866, guid: ceaf69b9b8b82a04fb25b150f9fcd940, type: 3}
   - {fileID: 7749787912058968317, guid: c7ebeef97444f8147ad3d8545831233d, type: 3}
+  - {fileID: 5586217323081652770, guid: fbbad9bba4133a54f9f86b780edac018, type: 3}
+  - {fileID: 5796656647198143261, guid: 3e057d751124a7e4b99d09211f2e7a27, type: 3}
   spawnPosition: {x: 0, y: 0, z: 0}
   spawnPositionOffset: {x: 0.5, y: 0.5, z: 0}
   spawnRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -504,7 +505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!156049354 &613515783
 Grid:
   m_ObjectHideFlags: 0

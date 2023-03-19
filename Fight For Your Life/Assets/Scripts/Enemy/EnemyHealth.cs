@@ -46,6 +46,10 @@ public class EnemyHealth : MonoBehaviour
                     healController.spawnRedHeart16(transform.position, Quaternion.identity);
                     xpController.AddXP(500f);
                     break;
+                case "EnemySkeleton":
+                    healController.spawnRedHeart16(transform.position, Quaternion.identity);
+                    xpController.AddXP(750f);
+                    break;
             }
             gameObject.SetActive(false);
             

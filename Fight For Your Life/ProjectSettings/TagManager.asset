@@ -9,6 +9,7 @@ TagManager:
   - XPBar
   - EnemyGoblin
   - EnemyNightBorne
+  - EnemySkeleton
   layers:
   - Default
   - TransparentFX

@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     Transform playerSlashAttackPoint;
     [SerializeField]
     float playerAttackSize;
-
+    public float playerAttackPower = 50;
     
 
 
@@ -74,16 +74,21 @@ public class PlayerController : MonoBehaviour
             {
                 case "EnemyImpRed":
                     enemyHealth = enemy.GetComponent<EnemyHealth>();
-                    enemyHealth.currHealth -= 50;
+                    enemyHealth.currHealth -= playerAttackPower;
                     break;
                 case "EnemyGoblin":
                     enemyHealth = enemy.GetComponent<EnemyHealth>();
-                    enemyHealth.currHealth -= 50;
+                    enemyHealth.currHealth -= playerAttackPower;
                     break;
                 case "EnemyNightBorne":
                     enemyHealth = enemy.GetComponent<EnemyHealth>();
-                    enemyHealth.currHealth -= 50;
+                    enemyHealth.currHealth -= playerAttackPower;
                     break;
+                case "EnemySkeleton":
+                    enemyHealth = enemy.GetComponent<EnemyHealth>();
+                    enemyHealth.currHealth -= playerAttackPower;
+                    break;
+
             }
             
         }
