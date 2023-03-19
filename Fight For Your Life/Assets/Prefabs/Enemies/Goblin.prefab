@@ -212,6 +212,6 @@ MonoBehaviour:
     m_Bits: 128
   enemySpeed: 2
   enemyAttackRange: 2
-  enemyAttackPower: 0
+  enemyAttackPower: 50
   enemyAttackSize: 2
   enemyAttackPoint: {fileID: 7749787911939910571}

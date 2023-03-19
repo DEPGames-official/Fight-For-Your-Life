@@ -88,6 +88,10 @@ public class PlayerController : MonoBehaviour
                     enemyHealth = enemy.GetComponent<EnemyHealth>();
                     enemyHealth.currHealth -= playerAttackPower;
                     break;
+                case "EnemyGolem":
+                    enemyHealth = enemy.GetComponent<EnemyHealth>();
+                    enemyHealth.currHealth -= playerAttackPower;
+                    break;
 
             }
             

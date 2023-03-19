@@ -160,8 +160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef7e735582d106f46afe8ac38073bb8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
-  currHealth: 350
+  maxHealth: 350
+  currHealth: 50
   healController: {fileID: 0}
   xpController: {fileID: 0}
 --- !u!114 &5796656647198143257
@@ -182,7 +182,7 @@ MonoBehaviour:
     m_Bits: 128
   enemySpeed: 2
   enemyAttackRange: 2
-  enemyAttackPower: 25
+  enemyAttackPower: 50
   enemyAttackSize: 2
   enemyAttackPoint: {fileID: 5796656648175175143}
 --- !u!1 &5796656648175175142

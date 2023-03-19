@@ -10,6 +10,7 @@ TagManager:
   - EnemyGoblin
   - EnemyNightBorne
   - EnemySkeleton
+  - EnemyGolem
   layers:
   - Default
   - TransparentFX

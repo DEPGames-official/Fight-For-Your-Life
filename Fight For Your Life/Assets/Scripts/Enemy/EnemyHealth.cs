@@ -50,6 +50,10 @@ public class EnemyHealth : MonoBehaviour
                     healController.spawnRedHeart16(transform.position, Quaternion.identity);
                     xpController.AddXP(750f);
                     break;
+                case "EnemyGolem":
+                    healController.spawnRedHeart16(transform.position, Quaternion.identity);
+                    xpController.AddXP(1000f);
+                    break;
             }
             gameObject.SetActive(false);
             
