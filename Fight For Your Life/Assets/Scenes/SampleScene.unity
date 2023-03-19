@@ -363,6 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabType:
+  - {fileID: 5586217323081652770, guid: fbbad9bba4133a54f9f86b780edac018, type: 3}
   - {fileID: 7788082630617775866, guid: ceaf69b9b8b82a04fb25b150f9fcd940, type: 3}
   - {fileID: 7749787912058968317, guid: c7ebeef97444f8147ad3d8545831233d, type: 3}
   spawnPosition: {x: 0, y: 0, z: 0}
@@ -370,6 +371,7 @@ MonoBehaviour:
   spawnRotation: {x: 0, y: 0, z: 0, w: 0}
   spawnAmount: 100
   spawnCount: 0
+  totalSpawnCount: 0
   xpController: {fileID: 828625320}
   xSpawnPos: 0
   ySpawnPos: 0
@@ -634,6 +636,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   redHeart16Prefab: {fileID: 4495663067707787626, guid: 41c8ecf5f576d2241aa4380c8b902332, type: 3}
+  chancePercent: 15
+  probability: 0
+  randomChance: 0
 --- !u!4 &1067974694
 Transform:
   m_ObjectHideFlags: 0

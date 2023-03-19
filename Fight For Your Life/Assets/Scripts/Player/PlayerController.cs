@@ -69,19 +69,22 @@ public class PlayerController : MonoBehaviour
         foreach (Collider2D enemy in hitEnemies)
         {
             print(enemy);
-            if (enemy.CompareTag("EnemyImpRed") == true)
+            EnemyHealth enemyHealth;
+            switch (enemy.tag)
             {
-                var enemyHealth = enemy.GetComponent<EnemyHealth>();
-                enemyHealth.currHealth -= 50;
-
-                
+                case "EnemyImpRed":
+                    enemyHealth = enemy.GetComponent<EnemyHealth>();
+                    enemyHealth.currHealth -= 50;
+                    break;
+                case "EnemyGoblin":
+                    enemyHealth = enemy.GetComponent<EnemyHealth>();
+                    enemyHealth.currHealth -= 50;
+                    break;
+                case "EnemyNightBorne":
+                    enemyHealth = enemy.GetComponent<EnemyHealth>();
+                    enemyHealth.currHealth -= 50;
+                    break;
             }
-            if (enemy.CompareTag("EnemyGoblin") == true)
-            {
-                var enemyHealth = enemy.GetComponent<EnemyHealth>();
-                enemyHealth.currHealth -= 50;
-            }
-            //Check what enemy tag it is and change values accordingly
             
         }
         

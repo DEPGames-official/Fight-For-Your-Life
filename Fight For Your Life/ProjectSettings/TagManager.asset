@@ -8,6 +8,7 @@ TagManager:
   - HealController
   - XPBar
   - EnemyGoblin
+  - EnemyNightBorne
   layers:
   - Default
   - TransparentFX

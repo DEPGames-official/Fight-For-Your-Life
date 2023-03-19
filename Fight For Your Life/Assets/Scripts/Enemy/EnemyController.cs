@@ -21,6 +21,7 @@ public class EnemyController : MonoBehaviour
 
     public float enemySpeed;
     public float enemyAttackRange;
+    public float enemyAttackPower = 25;
     [SerializeField]
     float enemyAttackSize = 0.5f;
     [SerializeField]
@@ -79,7 +80,7 @@ public class EnemyController : MonoBehaviour
         {
             //print(player);
             var playerHealth = player.gameObject.GetComponent<PlayerHealth>();
-            playerHealth.currHealth -= 25;
+            playerHealth.currHealth -= enemyAttackPower;
         }
     }
 

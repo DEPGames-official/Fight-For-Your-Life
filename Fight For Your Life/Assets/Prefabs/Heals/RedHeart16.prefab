@@ -113,4 +113,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerToHealPrefab: {fileID: 423235297481062552, guid: fd89b54bce63fbe4caccb7b8124cf481, type: 3}
-  healAmount: 50
+  healAmount: 25

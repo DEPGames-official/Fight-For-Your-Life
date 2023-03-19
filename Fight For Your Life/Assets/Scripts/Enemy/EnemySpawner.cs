@@ -16,6 +16,7 @@ public class EnemySpawner : MonoBehaviour
 
     public int spawnAmount;
     public int spawnCount;
+    public int totalSpawnCount;
 
     [SerializeField]
     XPBarController xpController;
@@ -29,6 +30,8 @@ public class EnemySpawner : MonoBehaviour
     public float zSpawnPos;
     float zSpawnPosRand;
 
+    System.Random spawnerRandom = new System.Random();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,63 +41,52 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*xSpawnPosRand = Random.Range(0, 11);
-        xSpawnPos = xSpawnPosRand / 10;
-        spawnPosition = new Vector3(xSpawnPos, 1f + spawnPositionOffset.y, 0f);
-        spawnOffset = Random.Range(5, 11);
-        spawnPositionOffset.y = spawnOffset / 10;
-        Vector3 v3Pos = Camera.main.ViewportToWorldPoint(spawnPosition);
-        enemyPrefabType[0].transform.position = v3Pos;*/
-
-
-        SpawnEnemy();
+        if (GetGameobjectsOnLayer(8).Count <= 0)
+            SpawnEnemies();
     }
 
     //level + (2*level)
-    void SpawnEnemy()
+    void SpawnEnemies()
     {
+        int xplevel = xpController.GetLevel();
+        spawnAmount = SpawnAmount(xplevel);
+        spawnCount = spawnAmount;
 
-        if (GetGameobjectsOnLayer(8).Count <= 0)
+        for (int i = 0; i < enemyPrefabType.Count; i++)
         {
-            int xplevel = xpController.GetLevel();
-            spawnAmount = SpawnAmount(xplevel);
+            EnemyController enemyPrefab = enemyPrefabType[i].GetComponent<EnemyController>();
 
-            for (int i = 0; i < enemyPrefabType.Count; i++)
+            if (enemyPrefab.difficultyLevel < xplevel && xplevel < enemyPrefab.difficultyLevel * 2)
             {
-                EnemyController enemyPrefab = enemyPrefabType[i].GetComponent<EnemyController>();
-
-                if (enemyPrefab.difficultyLevel < xplevel && xplevel < enemyPrefab.difficultyLevel * 2)
+                //Amount of enemies to spawn that is of the lower level calculated based on it's level
+                var amountOffset = SpawnAmount(enemyPrefab.difficultyLevel);
+                spawnAmount -= amountOffset;
+                for (int x = 0; x < amountOffset; x++)
                 {
-                    var amountToTakeOff = SpawnAmount(enemyPrefab.difficultyLevel);
-                    print(amountToTakeOff);
-                    spawnAmount -= amountToTakeOff;
-                    for (int x = 0; x < amountToTakeOff; x++)
-                    {
-                        SpawnSide();
-
-                        Vector3 v3Pos = Camera.main.ViewportToWorldPoint(spawnPosition);
-                        var enemyToSpawn = enemyPrefabType[i];
-                        GameObject newEnemy = Instantiate(enemyToSpawn, v3Pos, Quaternion.identity);
-                    }
+                    SpawnEnemy(enemyPrefabType[i]);
                 }
-                if (enemyPrefab.difficultyLevel >= xplevel && spawnAmount >= 0)
-                {
-                    for (int x = spawnAmount; x > 0; x--)
-                    {
-                        SpawnSide();
-
-                        Vector3 v3Pos = Camera.main.ViewportToWorldPoint(spawnPosition);
-                        var enemyToSpawn = enemyPrefabType[i];
-                        GameObject newEnemy = Instantiate(enemyToSpawn, v3Pos, Quaternion.identity);
-                        spawnAmount--;
-                    }
-                }
-                
             }
-
-            
+            if (enemyPrefab.difficultyLevel >= xplevel && spawnAmount > 0)
+            {
+                for (int x = spawnAmount; x > 0; x--)
+                {
+                    SpawnEnemy(enemyPrefabType[i]);
+                    spawnAmount--;
+                }
+            }
+                
         }
+    }
 
+    void SpawnEnemy(GameObject enemy)
+    {
+        SpawnSide();
+
+        Vector3 v3Pos = Camera.main.ViewportToWorldPoint(spawnPosition);
+        var enemyToSpawn = enemy;
+        GameObject newEnemy = Instantiate(enemyToSpawn, v3Pos, Quaternion.identity);
+
+        totalSpawnCount++;
     }
 
     int SpawnAmount(int level)
@@ -107,7 +99,7 @@ public class EnemySpawner : MonoBehaviour
     {
         SpawnRandom(0, 11);
 
-        switch (Random.Range(1, 5))
+        switch (spawnerRandom.Next(1, 5))
         {
             case 1:
                 spawnPosition = new Vector3(xSpawnPos, 1f + spawnPositionOffset.y, 0f);
@@ -135,10 +127,10 @@ public class EnemySpawner : MonoBehaviour
     {
         SpawnOffset(5, 11);
 
-        xSpawnPosRand = Random.Range(0, 11);
+        xSpawnPosRand = spawnerRandom.Next(0, 11);
         xSpawnPos = xSpawnPosRand / 10;
 
-        ySpawnPosRand = Random.Range(0, 11);
+        ySpawnPosRand = spawnerRandom.Next(0, 11);
         ySpawnPos = ySpawnPosRand / 10;
 
     }
@@ -146,7 +138,7 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnOffset(int minInclusive, int maxExclusive)
     {
-        spawnOffsetAmount = Random.Range(minInclusive, maxExclusive);
+        spawnOffsetAmount = spawnerRandom.Next(minInclusive, maxExclusive);
 
         spawnPositionOffset.x = spawnOffsetAmount / 10;
         spawnPositionOffset.y = spawnOffsetAmount / 10;

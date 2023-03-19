@@ -29,14 +29,24 @@ public class EnemyHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Do the following in case each individual enemy dies
         if (currHealth <= 0f)
         {
-            if (gameObject.tag == "EnemyImpRed")
+            switch (gameObject.tag)
             {
-                healController.spawnRedHeart16(transform.position, Quaternion.identity);
-                xpController.AddXP(150f);
+                case "EnemyImpRed":
+                    healController.spawnRedHeart16(transform.position, Quaternion.identity);
+                    xpController.AddXP(150f);
+                    break;
+                case "EnemyGoblin":
+                    healController.spawnRedHeart16(transform.position, Quaternion.identity);
+                    xpController.AddXP(300f);
+                    break;
+                case "EnemyNightBorne":
+                    healController.spawnRedHeart16(transform.position, Quaternion.identity);
+                    xpController.AddXP(500f);
+                    break;
             }
-
             gameObject.SetActive(false);
             
         }
