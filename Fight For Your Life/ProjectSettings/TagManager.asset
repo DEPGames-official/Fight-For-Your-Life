@@ -48,6 +48,9 @@ TagManager:
   - name: MainGround
     uniqueID: 253231159
     locked: 0
+  - name: PathWay
+    uniqueID: 3460363771
+    locked: 0
   - name: EnemySkin
     uniqueID: 3820290207
     locked: 0

@@ -9,6 +9,15 @@ public class ProceduralGeneration : MonoBehaviour
     [SerializeField]
     Tilemap mainLand;
     public GameObject square;
+    //Min x range from player
+    public int spawnXRange;
+    //The random distance between min range and this range
+    public int spawnXOffset;
+    //The random distance between min range and this range
+    public int spawnYOffset;
+    //Min y range from player
+    public int spawnYRange;
+    public Vector3 spawnPosition;
     public TileBase grassTile;
     public float generationOffset;
     public Vector3 startPos, endPos;
@@ -17,10 +26,11 @@ public class ProceduralGeneration : MonoBehaviour
     public Camera cam;
 
     public PlayerController player;
+    PathGenerator pathGenerator = new PathGenerator();
     // Start is called before the first frame update
     void Start()
     {
-
+        SpawnSquare();
     }
 
     // Update is called once per frame
@@ -44,6 +54,22 @@ public class ProceduralGeneration : MonoBehaviour
         endPos = new Vector3(rightBound + generationOffset, bottomBound - generationOffset);
     }
 
+    //Use square to simulate spawning boots to find to keep you afloat when the world gets flooded
+    void SpawnSquare()
+    {
+        print("Nom?");
+        int spawnX = Random.Range(spawnXRange, spawnXOffset);
+        int spawnY = Random.Range(spawnYRange, spawnYOffset);
+
+        print(spawnX);
+        print(spawnY);
+
+        spawnPosition = new Vector3(spawnX, spawnY, 0);
+
+        GameObject.Instantiate(square, spawnPosition, Quaternion.identity);
+        print(spawnPosition);
+    }
+
     void FillArea()
     {
         if (player.inputX != 0f || player.inputY != 0f)
@@ -51,8 +77,7 @@ public class ProceduralGeneration : MonoBehaviour
             Vector3Int cellPosStart = mainLand.WorldToCell(startPos);
             Vector3Int cellPosEnd = mainLand.WorldToCell(endPos);
 
-            //Move x position first then go down 1 then set x to 0 up until the cellstartpos = cellendpos
-
+            //Move x position first then load all of y then move x 1 more up until the cellstartpos = cellendpos
             for (int x = cellPosStart.x; x < cellPosEnd.x; x++)
             {
                 for (int y = cellPosStart.y; y > cellPosEnd.y; y--)
@@ -61,7 +86,6 @@ public class ProceduralGeneration : MonoBehaviour
                     if (!mainLand.HasTile(tilePosition))
                     {
                         mainLand.SetTile(tilePosition, grassTile);
-                        print(tilePosition);
                     }
 
                 }
